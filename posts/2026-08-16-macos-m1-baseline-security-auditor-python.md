@@ -4,7 +4,7 @@ Many people think keeping a Mac secure requires buying expensive monthly securit
 
 The truth is that macOS already has powerful security protections built directly into Apple Silicon chips and the operating system. You do not need bloated third party software. You just need a way to verify that your built in macOS security settings are actually turned on and configured correctly.
 
-In this guide, we will write a simple Python script that checks seven key baseline security settings on your M1 MacBook Pro and writes a clean summary report to your desktop.
+In this guide, we will write a simple Python script that checks seven key baseline security settings on your M-series MacBook Pro and writes a clean summary report to your desktop.
 
 ---
 
