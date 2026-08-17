@@ -1,0 +1,764 @@
+/* ==========================================================================
+   Jeff St. Andre - Clean, Inviting & Thoughtful Engineering Site
+   Palette: Deep Space Black, Stark White, Signature Olive-Chartreuse (#a9a42c)
+   ========================================================================== */
+
+:root {
+  /* Core Color Palette */
+  --bg-deep: #0a0c10;
+  --bg-surface: #121620;
+  --bg-surface-elevated: #181d2a;
+  --bg-surface-hover: #1e2434;
+  --bg-code: #07090d;
+
+  /* Signature Accent: Olive-Chartreuse */
+  --accent-green: #a9a42c;
+  --accent-green-bright: #c7c234;
+  --accent-green-muted: #726f1c;
+  --accent-green-bg: rgba(169, 164, 44, 0.12);
+  --accent-green-border: rgba(169, 164, 44, 0.35);
+
+  /* Contrast & Text */
+  --text-pure-white: #ffffff;
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  /* Borders */
+  --border-subtle: #1e2533;
+  --border-strong: #2c364a;
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  /* Geometry */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 9999px;
+
+  --measure-content: 740px;
+  --measure-wide: 860px;
+
+  --transition-fast: 0.15s ease;
+  --transition-smooth: 0.25s ease;
+}
+
+/* ==========================================================================
+   Reset & Base Styles
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 0 1.25rem;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--accent-green);
+  color: #000000;
+}
+
+/* Links */
+a {
+  color: var(--accent-green-bright);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: #e5e042;
+}
+
+/* ==========================================================================
+   Layout Shell
+   ========================================================================== */
+.site-wrapper {
+  width: 100%;
+  max-width: var(--measure-wide);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 4rem;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.25rem 0 1.75rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 0.95rem;
+  text-decoration: none;
+}
+
+.header-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--accent-green-border);
+  object-fit: cover;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+  background-color: var(--bg-surface);
+}
+
+.brand-link:hover .header-avatar {
+  border-color: var(--accent-green-bright);
+  box-shadow: 0 0 12px rgba(169, 164, 44, 0.3);
+  transform: scale(1.04);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.brand-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-pure-white);
+  transition: color var(--transition-fast);
+}
+
+.brand-link:hover .brand-name {
+  color: var(--accent-green-bright);
+}
+
+.brand-tagline {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+/* Navigation */
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nav-link:hover {
+  color: var(--text-pure-white);
+  background-color: var(--bg-surface);
+  border-color: var(--border-subtle);
+}
+
+.nav-link.active {
+  color: var(--accent-green-bright);
+  background-color: var(--accent-green-bg);
+  border-color: var(--accent-green-border);
+  font-weight: 600;
+}
+
+.ext-icon {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  color: var(--accent-green);
+}
+
+/* Main Content Area */
+.site-main {
+  flex-grow: 1;
+  width: 100%;
+}
+
+/* Stan Lee Quote Card */
+.stan-lee-quote-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 2rem 2.25rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.stan-lee-quote {
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--text-pure-white);
+  line-height: 1.6;
+  max-width: 640px;
+  margin: 0;
+}
+
+.stan-lee-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stan-lee-img {
+  width: 110px;
+  height: auto;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+}
+
+.stan-lee-author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stan-lee-author .author-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-pure-white);
+}
+
+.stan-lee-author .author-sub {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* Section Intros */
+.section-header {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--text-pure-white);
+  margin-bottom: 0.45rem;
+}
+
+.section-lead {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  max-width: var(--measure-content);
+}
+
+/* ==========================================================================
+   Jeff St. Andre - Clean, Inviting & Thoughtful Engineering Site
+   ========================================================================== */
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.post-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.75rem;
+  cursor: pointer;
+  position: relative;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-strong);
+  background-color: var(--bg-surface-elevated);
+}
+
+.post-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.post-date {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.category-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-green-bright);
+  background: var(--accent-green-bg);
+  border: 1px solid var(--accent-green-border);
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-pill);
+  letter-spacing: -0.01em;
+}
+
+.post-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-pure-white);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  transition: color var(--transition-fast);
+}
+
+.post-card:hover .post-title {
+  color: var(--accent-green-bright);
+}
+
+.post-summary {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   Article Reading View
+   ========================================================================== */
+.article-container {
+  max-width: var(--measure-content);
+  margin: 0 auto;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  padding: 0.4rem 0.85rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.back-btn:hover {
+  color: var(--text-pure-white);
+  border-color: var(--accent-green-border);
+  background: var(--bg-surface-elevated);
+}
+
+.article-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.article-read-time {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+/* Markdown Body Formatting */
+.markdown-body {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+  color: var(--text-pure-white);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.35;
+}
+
+.markdown-body h1 { font-size: 2.1rem; }
+.markdown-body h2 { 
+  font-size: 1.45rem; 
+  padding-bottom: 0.4rem; 
+  border-bottom: 1px solid var(--border-subtle); 
+}
+
+.markdown-body h3 { font-size: 1.2rem; }
+
+.markdown-body p {
+  margin-bottom: 1.4rem;
+}
+
+.markdown-body strong {
+  color: var(--text-pure-white);
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  border: 0;
+  border-top: 1px solid var(--border-subtle);
+  margin: 2.5rem 0;
+}
+
+.markdown-body blockquote {
+  border-left: 3px solid var(--accent-green);
+  padding: 0.75rem 1.25rem;
+  margin: 1.75rem 0;
+  color: var(--text-secondary);
+  background: var(--accent-green-bg);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.markdown-body blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  margin: 1.35rem 0;
+  padding-left: 1.6rem;
+}
+
+.markdown-body li {
+  margin-bottom: 0.6rem;
+}
+
+.markdown-body code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.2em 0.45em;
+  border-radius: var(--radius-xs);
+  color: var(--accent-green-bright);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.markdown-body pre {
+  background: var(--bg-code) !important;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  margin: 1.85rem 0;
+  overflow-x: auto;
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.markdown-body pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-family: var(--font-mono);
+  color: var(--text-primary);
+}
+
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.85rem 0;
+  font-size: 0.9375rem;
+}
+
+.markdown-body th,
+.markdown-body td {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-subtle);
+  text-align: left;
+}
+
+.markdown-body th {
+  background: var(--bg-surface);
+  font-weight: 600;
+  color: var(--text-pure-white);
+}
+
+/* ==========================================================================
+   Projects & Tools Grid
+   ========================================================================== */
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+.tool-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.tool-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-strong);
+  background-color: var(--bg-surface-elevated);
+}
+
+.tool-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.tool-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--text-pure-white);
+}
+
+.tool-desc {
+  font-size: 0.90625rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.tool-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.85rem;
+}
+
+.tool-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-xs);
+}
+
+.tool-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--accent-green-bright);
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.tool-link:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Slides / Presentations View
+   ========================================================================== */
+.slides-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.slide-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.75rem;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.slide-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-strong);
+}
+
+.slide-event {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent-green);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.slide-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-pure-white);
+  margin-bottom: 0.5rem;
+}
+
+.slide-desc {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.slide-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.slide-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--radius-sm);
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  transition: all var(--transition-fast);
+}
+
+.slide-btn:hover {
+  border-color: var(--accent-green-border);
+  background: var(--accent-green-bg);
+  color: var(--accent-green-bright);
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  margin-top: 4rem;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-separator {
+  opacity: 0.4;
+}
+
+.footer-right {
+  display: flex;
+  gap: 1.25rem;
+  font-size: 0.8125rem;
+}
+
+.footer-right a {
+  color: var(--text-muted);
+}
+
+.footer-right a:hover {
+  color: var(--accent-green-bright);
+}
+
+/* ==========================================================================
+   Empty States & Error Handling
+   ========================================================================== */
+.empty-state {
+  text-align: center;
+  padding: 3.5rem 1.5rem;
+  background: var(--bg-surface);
+  border: 1px dashed var(--border-subtle);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+}
+
+.empty-state p {
+  margin-top: 0.5rem;
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+@media (max-width: 640px) {
+  body {
+    padding: 0 0.875rem;
+  }
+
+  .site-header {
+    padding: 1.5rem 0 1.25rem 0;
+    margin-bottom: 1.75rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .post-card {
+    padding: 1.25rem;
+  }
+
+  .tool-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}

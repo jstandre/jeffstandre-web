@@ -1,0 +1,9 @@
+[
+  {
+    "slug": "2026-08-16-macos-m1-baseline-security-auditor-python",
+    "title": "Building a Local Python Script to Audit Security on Your M1 MacBook Pro",
+    "date": "2026-08-16",
+    "category": "Security & Automation",
+    "summary": "Learn how to write a simple Python script to check key security settings like FileVault, Firewall, and Gatekeeper on your M1 MacBook Pro."
+  }
+]

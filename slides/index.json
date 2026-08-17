@@ -1,0 +1,100 @@
+[
+  {
+    "title": "The Essentials of Esports in K-12",
+    "event": "Tech and Learning Conference 2019 · Austin, Texas",
+    "year": "2019",
+    "url": "https://docs.google.com/presentation/d/17Ppm9dGL6-XvXWYBWbFSqMkPaoxaVbkpDD97cnr05bI/present?slide=id.p",
+    "description": "Key takeaways, infrastructure needs, and operational considerations for building K-12 Esports programs."
+  },
+  {
+    "title": "Emerging Worlds: AR and VR in Education",
+    "event": "Learnfest ATX 2019 · Austin, Texas",
+    "year": "2019",
+    "url": "https://docs.google.com/presentation/d/1o4QhXvQCVP3Q_2xCT7srizVlIYVFUwLQ7QBs55ZOj7M/present?slide=id.g35f391192_00",
+    "description": "Practical applications, hardware requirements, and curriculum integration strategies for augmented and virtual reality in the classroom."
+  },
+  {
+    "title": "GoGuardian Admin Panel Training",
+    "event": "ESC Region 9 Net9 Techie Training 2019 · Wichita Falls, Texas",
+    "year": "2019",
+    "url": "https://docs.google.com/presentation/d/1OV_HCZIxl1UQvKUdvTbDS6nKTTs67cEizFwF88xNu7Q/present?slide=id.g35f391192_00",
+    "description": "Administrative walkthrough for filtering, policy configuration, and fleet monitoring using GoGuardian."
+  },
+  {
+    "title": "CVISD Board Update: District 1-to-1 Project (Year 3)",
+    "event": "City View ISD Board Meeting 2017 · Wichita Falls, Texas",
+    "year": "2017",
+    "url": "https://docs.google.com/presentation/d/1KHv3fPEvoJXpj8Yx2ZhrTVx-YYcDh9FLBH8bHPTZX2c/present?slide=id.g35f391192_00",
+    "description": "Year 3 progress report, student deployment metrics, and infrastructure updates for City View ISD 1-to-1 Chromebook initiative."
+  },
+  {
+    "title": "Coding and Computational Thinking in Every Classroom",
+    "event": "LACUE Conference 2017 · New Orleans, Louisiana",
+    "year": "2017",
+    "url": "https://docs.google.com/presentation/d/1D4NDO9_e-ZO2OWLGS4SCLwUYhSZC-_EEm765On9I5aM/present?slide=id.g35f391192_00",
+    "description": "Strategies for integrating foundational computer science and algorithmic problem-solving across K-12 subject areas."
+  },
+  {
+    "title": "Communication Tools for Educators",
+    "event": "LACUE Conference 2017 · New Orleans, Louisiana",
+    "year": "2017",
+    "url": "https://docs.google.com/presentation/d/1iZ-egHXORmp8jjKq0ls3KTuL19W4x1j9SPOWpbQktx0/present?slide=id.g35f391192_00",
+    "description": "Modern web tools and communication workflows for effective school, classroom, and community outreach."
+  },
+  {
+    "title": "Google For Education Leadership Training",
+    "event": "Leadership Training 2017 · Wichita Falls, Texas",
+    "year": "2017",
+    "url": "https://docs.google.com/presentation/d/1_Nya72nsymTQvg1ktx-piXsACQRxRJ0k4wkRyKv3ABM/present?slide=id.p",
+    "description": "Leadership framework for deploying Google Workspace for Education and managing digital transformation."
+  },
+  {
+    "title": "Tips, Tricks, and Best Practices: Google Apps/Chromebook Admins",
+    "event": "Houston Google Summit 2016 · Houston, Texas",
+    "year": "2016",
+    "url": "https://docs.google.com/presentation/d/1hBpufmgXbqUSMjLdKc-re_Ty2QLLe1_6yWlZdj1v8iM/present?slide=id.g35f391192_00",
+    "description": "Admin automation secrets, OU architecture, policy enforcement, and fleet management for Google Workspace system administrators."
+  },
+  {
+    "title": "Ducksoup and Other Web 2.0 Apps",
+    "event": "CVISD Summer PD 2016 · Wichita Falls, Texas",
+    "year": "2016",
+    "url": "https://docs.google.com/presentation/d/10mxEQtnZjeuXm6bclhhZyPPa05sJ24-JLARPa4PT3Zk/present?slide=id.g35f391192_00",
+    "description": "Interactive web applications and classroom tools to drive student engagement."
+  },
+  {
+    "title": "Coding and Computational Thinking in Every Classroom",
+    "event": "CVISD Summer PD 2016 · Wichita Falls, Texas",
+    "year": "2016",
+    "url": "https://docs.google.com/presentation/d/1D4NDO9_e-ZO2OWLGS4SCLwUYhSZC-_EEm765On9I5aM/present?slide=id.g35f391192_00",
+    "description": "Hands-on workshop for introducing code and logic concepts to K-12 students."
+  },
+  {
+    "title": "Communication Tools",
+    "event": "CVISD Summer PD 2016 · Wichita Falls, Texas",
+    "year": "2016",
+    "url": "https://docs.google.com/presentation/d/1iZ-egHXORmp8jjKq0ls3KTuL19W4x1j9SPOWpbQktx0/present?slide=id.g35f391192_00",
+    "description": "Overview of communication platforms and digital publishing workflows for educators."
+  },
+  {
+    "title": "Hidden Google Tools",
+    "event": "CVISD Summer PD 2016 · Wichita Falls, Texas",
+    "year": "2016",
+    "url": "https://docs.google.com/presentation/d/14nHcVi35W2IPDEyugxCNvtaVd5uDWDu7CZ_1JVZfa9w/present?slide=id.g35f391192_00",
+    "description": "Lesser known features, extensions, and power-user tricks hidden inside Google Workspace apps."
+  },
+  {
+    "title": "Tips, Tricks, and Best Practices: Google Apps/Chromebook Admins",
+    "event": "TCEA SysAdmin Conference 2015 · Austin, Texas",
+    "year": "2015",
+    "url": "https://docs.google.com/presentation/d/1hBpufmgXbqUSMjLdKc-re_Ty2QLLe1_6yWlZdj1v8iM/present?slide=id.g35f391192_00",
+    "description": "System administrator session on Google Admin console tricks, GAM scripts, and Chromebook device provisioning."
+  },
+  {
+    "title": "Google Apps & Chromebook Management",
+    "event": "ESC Region 9 Net9 Techie Training 2015 · Wichita Falls, Texas",
+    "year": "2015",
+    "url": "https://docs.google.com/presentation/d/1o8jtVeFHFqD6NNl5-PA2rxs676umsDHoUqOS2JvlZgY/present?slide=id.p",
+    "description": "Foundational course on configuring Google Apps domains and managing K-12 Chromebook deployments."
+  }
+]
