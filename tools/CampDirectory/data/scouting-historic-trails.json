@@ -4,7 +4,7 @@
   "url": "https://www.scouting.org/outdoor-programs/camping/",
   "updated": "August 2026"
  },
- "note": "Converted from the PDF list with spelling fixes. Trails outside the council’s home state use the trail’s location.",
+ "note": "Converted from the PDF list with spelling fixes. Trails outside the council’s home state use the trail’s location. Council websites and merger notes were updated from a September 2026 web search.",
  "entries": [
   {
    "id": "sc-council-1",
@@ -25,7 +25,7 @@
    "org": "Scouting America",
    "city": "Fort Smith",
    "state": "AR",
-   "website": "http://www.quapawbsa.org/",
+   "website": "https://www.westarkbsa.org/",
    "summary": "Scouting America local council #16, headquartered in Fort Smith. Runs 1 approved national historic trail: Pea Ridge Battlefield Trail."
   },
   {
@@ -47,7 +47,7 @@
    "org": "Scouting America",
    "city": "Pleasanton",
    "state": "CA",
-   "website": "http://ggacbsa.org",
+   "website": "https://goldengatescouting.org/",
    "summary": "Scouting America local council #23, headquartered in Pleasanton. Runs 1 approved national historic trail: Presidio Historic Trail."
   },
   {
@@ -80,7 +80,7 @@
    "org": "Scouting America",
    "city": "Santa Barbara",
    "state": "CA",
-   "website": "http://www.lpcbsa.org/",
+   "website": "https://lospadresscouting.org/",
    "summary": "Scouting America local council #53, headquartered in Santa Barbara. Runs 1 approved national historic trail: Los Padres Council Historic Trail (Santa Barbara)."
   },
   {
@@ -158,7 +158,7 @@
    "org": "Scouting America",
    "city": "Bethesda",
    "state": "MD",
-   "website": "https://www.ncacbsa.org/",
+   "website": "https://ncacscouting.org/",
    "summary": "Scouting America local council #82, headquartered in Bethesda. Runs 13 approved national historic trails, including Lincoln Pilgrimage Trail and National Capital Trail of Freedom."
   },
   {
@@ -169,7 +169,7 @@
    "org": "Scouting America",
    "city": "Miami Lakes",
    "state": "FL",
-   "website": "https://sfcbsa.org/",
+   "website": "https://sfcscouting.org/",
    "summary": "Scouting America local council #84, headquartered in Miami Lakes. Runs 1 approved national historic trail: The Barefoot Mailman Hike."
   },
   {
@@ -224,7 +224,7 @@
    "org": "Scouting America",
    "city": "Valdosta",
    "state": "GA",
-   "website": "http://www.coastalgeorgiabsa.org/",
+   "website": "https://coastalgeorgiabsa.org/",
    "summary": "Scouting America local council #98, headquartered in Valdosta. Runs 1 approved national historic trail: Cumberland Island Historic Trail."
   },
   {
@@ -235,7 +235,7 @@
    "org": "Scouting America",
    "city": "Honolulu",
    "state": "HI",
-   "website": "http://scoutinghawaii.org/",
+   "website": "https://www.scoutinghawaii.org/",
    "summary": "Scouting America local council #104, headquartered in Honolulu. Runs 2 approved national historic trails: Hawaii Heritage Trail – Hilo and Hawaii Heritage Trail – Honolulu."
   },
   {
@@ -268,7 +268,7 @@
    "org": "Scouting America",
    "city": "Quincy",
    "state": "IL",
-   "website": "https://www.mississippivalleybsa.org/",
+   "website": "https://mvcscouting.org/",
    "summary": "Scouting America local council #141, headquartered in Quincy. Runs 1 approved national historic trail: Martyrdom Trail."
   },
   {
@@ -290,7 +290,7 @@
    "org": "Scouting America",
    "city": "Fort Wayne",
    "state": "IN",
-   "website": "http://www.awacbsa.com/",
+   "website": "https://www.awac.org/",
    "summary": "Scouting America local council #157, headquartered in Fort Wayne. Runs 5 approved national historic trails, including Me-She-Kin-No-Quah Mtn. Bike Trail and Chief Little Turtle Trail."
   },
   {
@@ -301,7 +301,7 @@
    "org": "Scouting America",
    "city": "Cedar Rapids",
    "state": "IA",
-   "website": "http://www.hawkeyebsa.org/",
+   "website": "https://hawkeyescouting.org/",
    "summary": "Scouting America local council #172, headquartered in Cedar Rapids. Runs 2 approved national historic trails: Hoover Trail and Sac and Fox Trail."
   },
   {
@@ -312,7 +312,7 @@
    "org": "Scouting America",
    "city": "Des Moines",
    "state": "IA",
-   "website": "https://www.midiowacouncilbsa.org/",
+   "website": "https://scoutingiowa.org/",
    "summary": "Scouting America local council #177, headquartered in Des Moines. Runs 3 approved national historic trails: Chief Wapello, Diamond Trail, and Kate Shelley Trail."
   },
   {
@@ -323,7 +323,7 @@
    "org": "Scouting America",
    "city": "Topeka",
    "state": "KS",
-   "website": "http://www.jayhawkcouncil.org/",
+   "website": "https://jayhawkcouncil.org/",
    "summary": "Scouting America local council #197, headquartered in Topeka. Runs 3 approved national historic trails: Curtis Trail, Kansas Capitol Trail, and Santa Fe Trail."
   },
   {
@@ -334,7 +334,7 @@
    "org": "Scouting America",
    "city": "Lexington",
    "state": "KY",
-   "website": "http://www.bgbsa.org/",
+   "website": "https://bgcscouting.org/",
    "summary": "Scouting America local council #204, headquartered in Lexington. Runs 2 approved national historic trails: Mischa-Mokwa Adventure Trail and Wa-La-Ha Buffalo Trail."
   },
   {
@@ -345,7 +345,7 @@
    "org": "Scouting America",
    "city": "Baltimore",
    "state": "MD",
-   "website": "http://www.baltimorebsa.org/",
+   "website": "https://baltimorescouting.org/",
    "summary": "Scouting America local council #220, headquartered in Baltimore. Runs 2 approved national historic trails: Baltimore Historic Trails and Defenders Trail."
   },
   {
@@ -379,7 +379,7 @@
    "city": "Lancaster",
    "state": "MA",
    "website": "http://www.nashuavalleybsa.org/",
-   "summary": "Scouting America local council #230, headquartered in Lancaster. Runs 1 approved national historic trail: Isaac Davis Trail."
+   "summary": "Scouting America local council #230, headquartered in Lancaster. Runs 1 approved national historic trail: Isaac Davis Trail. Nashua Valley Council merged with Mohegan Council in 2018 to form the Heart of New England Council."
   },
   {
    "id": "sc-council-234",
@@ -400,7 +400,7 @@
    "org": "Scouting America",
    "city": "St. Paul",
    "state": "MN",
-   "website": "http://www.northernstarbsa.org/",
+   "website": "https://www.northernstar.org/",
    "summary": "Scouting America local council #250, headquartered in St. Paul. Runs 3 approved national historic trails: 1862 U.S.-Dakota War Historic Trail, Fort Snelling Historic Trail, and L'Etoile du Nord (Star of the North) Historic Trail."
   },
   {
@@ -466,7 +466,7 @@
    "org": "Scouting America",
    "city": "Oakland",
    "state": "NJ",
-   "website": "http://www.nnjbsa.org/",
+   "website": "https://scoutingnnj.org/",
    "summary": "Scouting America local council #333, headquartered in Oakland. Runs 1 approved national historic trail: Palisades Historic Trails."
   },
   {
@@ -488,7 +488,7 @@
    "org": "Scouting America",
    "city": "Morganville",
    "state": "NJ",
-   "website": "https://www.monmouthbsa.org/",
+   "website": "https://www.monmouthcouncilscouting.org/",
    "summary": "Scouting America local council #347, headquartered in Morganville. Runs 1 approved national historic trail: Battle of Monmouth Historic Trail."
   },
   {
@@ -499,7 +499,7 @@
    "org": "Scouting America",
    "city": "Cedar Knolls",
    "state": "NJ",
-   "website": "https://ppcbsa.org/",
+   "website": "https://ppcscouting.org/",
    "summary": "Scouting America local council #358, headquartered in Cedar Knolls. Runs 2 approved national historic trails: Jockey Hollow Trail and The Victory Trail."
   },
   {
@@ -521,7 +521,7 @@
    "org": "Scouting America",
    "city": "Syracuse",
    "state": "NY",
-   "website": "http://www.cnyscouts.org/",
+   "website": "https://cnyscouts.org/",
    "summary": "Scouting America local council #373, headquartered in Syracuse. Runs 1 approved national historic trail: Millard Fillmore Historical Trail."
   },
   {
@@ -554,7 +554,7 @@
    "org": "Scouting America",
    "city": "Massapequa",
    "state": "NY",
-   "website": "https://trcbsa.org/",
+   "website": "https://www.trcscouts.org/",
    "summary": "Scouting America local council #386, headquartered in Massapequa. Runs 1 approved national historic trail: Legacy of the Sun Trail."
   },
   {
@@ -565,7 +565,7 @@
    "org": "Scouting America",
    "city": "Rochester",
    "state": "NY",
-   "website": "https://www.senecawaterways.org/",
+   "website": "https://senecawaterways.org/",
    "summary": "Scouting America local council #397, headquartered in Rochester. Runs 2 approved national historic trails: Heritage Trail and Trail of the Lost City of Tryon."
   },
   {
@@ -577,7 +577,7 @@
    "city": "Utica",
    "state": "NY",
    "website": "http://www.rtcbsa.org/",
-   "summary": "Scouting America local council #400, headquartered in Utica. Runs 2 approved national historic trails: Revolutionary Trails Council Historic Trail and Romans Nose."
+   "summary": "Scouting America local council #400, headquartered in Utica. Runs 2 approved national historic trails: Revolutionary Trails Council Historic Trail and Romans Nose. Revolutionary Trails and Otschodela councils merged in 2016 to form the Leatherstocking Council (#400)."
   },
   {
    "id": "sc-council-404",
@@ -609,7 +609,7 @@
    "org": "Scouting America",
    "city": "Wilmington",
    "state": "NC",
-   "website": "https://www.capefearcouncilbsa.org/",
+   "website": "https://www.capefearscouting.org/",
    "summary": "Scouting America local council #425, headquartered in Wilmington. Runs 2 approved national historic trails: Cape Fear Historic Trail and Moore's Creek National Battlefield."
   },
   {
@@ -620,7 +620,7 @@
    "org": "Scouting America",
    "city": "Fargo",
    "state": "ND",
-   "website": "http://www.nlcbsa.org/",
+   "website": "https://scoutingnlc.org/",
    "summary": "Scouting America local council #429, headquartered in Fargo. Runs 1 approved national historic trail: Maah Daah Hey Trail."
   },
   {
@@ -697,7 +697,7 @@
    "org": "Scouting America",
    "city": "Portland",
    "state": "OR",
-   "website": "https://www.cpcbsa.org/",
+   "website": "https://cpcscouting.org/",
    "summary": "Scouting America local council #492, headquartered in Portland. Runs 3 approved national historic trails: Oregon Trail Hike, Hoyt Arboretum Vietnam Veterans Memorial Trail Hike, and Barlow Trail Hike."
   },
   {
@@ -719,7 +719,7 @@
    "org": "Scouting America",
    "city": "Philadelphia",
    "state": "PA",
-   "website": "https://colbsa.org/",
+   "website": "https://scoutingphilly.org/",
    "summary": "Scouting America local council #525, headquartered in Philadelphia. Runs 5 approved national historic trails, including Benjamin Franklin Historical Trail and Carlisle Historical Trail."
   },
   {
@@ -730,7 +730,7 @@
    "org": "Scouting America",
    "city": "Erie",
    "state": "PA",
-   "website": "http://frenchcreek-bsa.org/",
+   "website": "https://www.fccscouting.org/",
    "summary": "Scouting America local council #532, headquartered in Erie. Runs 3 approved national historic trails: Erie Historical Trail, Shenango Trail, and Washington Trail."
   },
   {
@@ -741,7 +741,7 @@
    "org": "Scouting America",
    "city": "Williamsport",
    "state": "PA",
-   "website": "http://councils.scouting.org/council533",
+   "website": "https://susquehannascouting.org/",
    "summary": "Scouting America local council #533, headquartered in Williamsport. Runs 1 approved national historic trail: Loyalsock Trail."
   },
   {
@@ -785,7 +785,7 @@
    "org": "Scouting America",
    "city": "Charleston",
    "state": "SC",
-   "website": "http://www.coastalcarolinabsa.org/",
+   "website": "https://coastalcarolinacouncil.org/",
    "summary": "Scouting America local council #550, headquartered in Charleston. Runs 2 approved national historic trails: Charleston Bicentennial Trail of Freedom and Siege of Charleston Historical Trail."
   },
   {
@@ -796,7 +796,7 @@
    "org": "Scouting America",
    "city": "Greenville",
    "state": "SC",
-   "website": "http://blueridgecouncil.org/brcn/",
+   "website": "https://www.blueridgecouncil.org/",
    "summary": "Scouting America local council #551, headquartered in Greenville. Runs 1 approved national historic trail: Blue Ridge Railroad Historical Trail."
   },
   {
@@ -818,7 +818,7 @@
    "org": "Scouting America",
    "city": "Nashville",
    "state": "TN",
-   "website": "https://www.mtcbsa.org/",
+   "website": "https://www.mtcscouting.org/",
    "summary": "Scouting America local council #560, headquartered in Nashville. Runs 2 approved national historic trails: Fort Donelson Memorial Trail and Franklin Then and Now Trail."
   },
   {
@@ -829,7 +829,7 @@
    "org": "Scouting America",
    "city": "Austin",
    "state": "TX",
-   "website": "http://www.bsacac.org/",
+   "website": "https://www.capitolareascouting.org/",
    "summary": "Scouting America local council #564, headquartered in Austin. Runs 1 approved national historic trail: Texas Heritage Trail."
   },
   {
@@ -851,8 +851,8 @@
    "org": "Scouting America",
    "city": "El Paso",
    "state": "TX",
-   "website": "http://www.yuccabsa.org/",
-   "summary": "Scouting America local council #573, headquartered in El Paso. Runs 1 approved national historic trail: Trestle Trail (Cloud-Climbing Rail Trail, Segment T5001)."
+   "website": "https://www.scoutingamericahighdesertcouncil.org/",
+   "summary": "Scouting America local council #573, headquartered in El Paso. Runs 1 approved national historic trail: Trestle Trail (Cloud-Climbing Rail Trail, Segment T5001). Yucca Council merged with Great Southwest Council in 2024 to form the High Desert Council (Albuquerque, NM)."
   },
   {
    "id": "sc-council-576",
@@ -862,7 +862,7 @@
    "org": "Scouting America",
    "city": "Houston",
    "state": "TX",
-   "website": "http://www.samhoustonbsa.org/",
+   "website": "https://shacbsa.org/",
    "summary": "Scouting America local council #576, headquartered in Houston. Runs 1 approved national historic trail: Sam Houston Historic Trail."
   },
   {
@@ -884,7 +884,7 @@
    "org": "Scouting America",
    "city": "San Antonio",
    "state": "TX",
-   "website": "http://www.alamoareabsa.org/",
+   "website": "https://www.alamoareascouting.org/",
    "summary": "Scouting America local council #583, headquartered in San Antonio. Runs 1 approved national historic trail: Mission Historic Trail."
   },
   {
@@ -907,7 +907,7 @@
    "city": "Ogden",
    "state": "UT",
    "website": "https://www.trappertrails.org/",
-   "summary": "Scouting America local council #589, headquartered in Ogden. Runs 1 approved national historic trail: Golden Spike Trail."
+   "summary": "Scouting America local council #589, headquartered in Ogden. Runs 1 approved national historic trail: Golden Spike Trail. Trapper Trails Council combined with Great Salt Lake and Utah National Parks councils in April 2020 to form the Crossroads of the West Council."
   },
   {
    "id": "sc-council-595",
@@ -939,8 +939,7 @@
    "org": "Scouting America",
    "city": "Everett",
    "state": "WA",
-   "website": "https://www.mountbakerbsa.org/",
-   "contactUrl": "https://www.mountbakerbsa.org/council/staff-directory/",
+   "website": "https://mountbakerscouting.org/",
    "summary": "Scouting America local council #606, headquartered in Everett. Runs 1 approved national historic trail: Pig War Historic Trail."
   },
   {
@@ -951,7 +950,7 @@
    "org": "Scouting America",
    "city": "Seattle",
    "state": "WA",
-   "website": "http://seattlebsa.org/",
+   "website": "https://scoutingseattle.org/",
    "summary": "Scouting America local council #609, headquartered in Seattle. Runs 2 approved national historic trails: North Fork Skokomish River Trail (O'Neil Expedition Trail) and Press Expedition Trail (Whiskey Bend Trailhead)."
   },
   {
@@ -962,7 +961,7 @@
    "org": "Scouting America",
    "city": "Anchorage",
    "state": "AK",
-   "website": "https://www.scoutingalaska.org/",
+   "website": "https://scoutingalaska.org/",
    "summary": "Scouting America local council #610, headquartered in Anchorage. Runs 1 approved national historic trail: Iditarod Historic Trail."
   },
   {
@@ -1006,7 +1005,7 @@
    "org": "Scouting America",
    "city": "New York",
    "state": "NY",
-   "website": "https://www.bsa-gnyc.org/",
+   "website": "https://nycscouting.org/",
    "summary": "Scouting America local council #640, headquartered in New York. Runs 5 approved national historic trails, including Brooklyn Historic Quest Trail and The Old New York Historical Trail."
   },
   {
@@ -1050,7 +1049,7 @@
    "org": "Scouting America",
    "city": "San Angelo",
    "state": "TX",
-   "website": "http://tswcbsa.org/",
+   "website": "https://www.scoutingtsc.org/",
    "summary": "Scouting America local council #741, headquartered in San Angelo. Runs 3 approved national historic trails: Fort Concho Historical Trail, Fort McKavett Historical Trail, and Fort Stockton Historical Trail."
   },
   {
@@ -1072,7 +1071,7 @@
    "org": "Scouting America",
    "city": "Flint",
    "state": "MI",
-   "website": "http://www.michiganscouting.org/",
+   "website": "https://michiganscouting.org/",
    "summary": "Scouting America local council #780, headquartered in Flint. Runs 3 approved national historic trails: Chief Pontiac Trail, Potawatomi Trail, and President Gerald R. Ford Trail."
   },
   {
@@ -1091,7 +1090,7 @@
    "kind": "Council",
    "name": "Transatlantic Council",
    "org": "Scouting America",
-   "website": "https://www.tac-bsa.org/",
+   "website": "https://tacscouting.org/",
    "summary": "Scouting America local council #802, serving Scouting units in Europe. Runs 17 approved national historic trails, including Vienna Historic Trail and Bastogne Historic Trail (Battle of the Bulge)."
   },
   {
@@ -1124,7 +1123,7 @@
    "org": "Scouting America",
    "unit": "Westark Area Council",
    "state": "AR",
-   "website": "http://www.quapawbsa.org/",
+   "website": "https://www.westarkbsa.org/",
    "summary": "Approved national historic trail run by the Westark Area Council (Fort Smith, AR). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1190,7 +1189,7 @@
    "org": "Scouting America",
    "unit": "Golden Gate Area Council",
    "state": "CA",
-   "website": "http://ggacbsa.org",
+   "website": "https://goldengatescouting.org/",
    "summary": "Approved national historic trail run by the Golden Gate Area Council (Pleasanton, CA). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1224,7 +1223,7 @@
    "unit": "Los Padres Council",
    "city": "Santa Barbara",
    "state": "CA",
-   "website": "http://www.lpcbsa.org/",
+   "website": "https://lospadresscouting.org/",
    "summary": "Approved national historic trail run by the Los Padres Council (Santa Barbara, CA). Contact the council for the trailhead, requirements, and the Historic Trails Award. The trail's name is cut off in the national list. Contact the Los Padres Council for details."
   },
   {
@@ -1303,7 +1302,7 @@
    "unit": "National Capital Area Council",
    "city": "Washington",
    "state": "DC",
-   "website": "https://www.ncacbsa.org/",
+   "website": "https://ncacscouting.org/",
    "summary": "Approved national historic trail run by the National Capital Area Council (Bethesda, MD). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1315,7 +1314,7 @@
    "unit": "National Capital Area Council",
    "city": "Washington",
    "state": "DC",
-   "website": "https://www.ncacbsa.org/",
+   "website": "https://ncacscouting.org/",
    "summary": "Approved national historic trail run by the National Capital Area Council (Bethesda, MD). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1327,7 +1326,7 @@
    "unit": "National Capital Area Council",
    "city": "Washington",
    "state": "DC",
-   "website": "https://www.ncacbsa.org/",
+   "website": "https://ncacscouting.org/",
    "summary": "Approved national historic trail run by the National Capital Area Council (Bethesda, MD). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1339,7 +1338,7 @@
    "unit": "National Capital Area Council",
    "city": "Washington",
    "state": "DC",
-   "website": "https://www.ncacbsa.org/",
+   "website": "https://ncacscouting.org/",
    "summary": "Approved national historic trail run by the National Capital Area Council (Bethesda, MD). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1351,7 +1350,7 @@
    "unit": "National Capital Area Council",
    "city": "Bladensburg",
    "state": "MD",
-   "website": "https://www.ncacbsa.org/",
+   "website": "https://ncacscouting.org/",
    "summary": "Approved national historic trail run by the National Capital Area Council (Bethesda, MD). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1363,7 +1362,7 @@
    "unit": "National Capital Area Council",
    "city": "Fredericksburg",
    "state": "VA",
-   "website": "https://www.ncacbsa.org/",
+   "website": "https://ncacscouting.org/",
    "summary": "Approved national historic trail run by the National Capital Area Council (Bethesda, MD). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1375,7 +1374,7 @@
    "unit": "National Capital Area Council",
    "city": "Fredericksburg",
    "state": "VA",
-   "website": "https://www.ncacbsa.org/",
+   "website": "https://ncacscouting.org/",
    "summary": "Approved national historic trail run by the National Capital Area Council (Bethesda, MD). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1387,7 +1386,7 @@
    "unit": "National Capital Area Council",
    "city": "Manassas",
    "state": "VA",
-   "website": "https://www.ncacbsa.org/",
+   "website": "https://ncacscouting.org/",
    "summary": "Approved national historic trail run by the National Capital Area Council (Bethesda, MD). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1399,7 +1398,7 @@
    "unit": "National Capital Area Council",
    "city": "Washington",
    "state": "DC",
-   "website": "https://www.ncacbsa.org/",
+   "website": "https://ncacscouting.org/",
    "summary": "Approved national historic trail run by the National Capital Area Council (Bethesda, MD). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1411,7 +1410,7 @@
    "unit": "National Capital Area Council",
    "city": "Alexandria",
    "state": "VA",
-   "website": "https://www.ncacbsa.org/",
+   "website": "https://ncacscouting.org/",
    "summary": "Approved national historic trail run by the National Capital Area Council (Bethesda, MD). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1423,7 +1422,7 @@
    "unit": "National Capital Area Council",
    "city": "Mount Vernon",
    "state": "VA",
-   "website": "https://www.ncacbsa.org/",
+   "website": "https://ncacscouting.org/",
    "summary": "Approved national historic trail run by the National Capital Area Council (Bethesda, MD). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1434,7 +1433,7 @@
    "org": "Scouting America",
    "unit": "National Capital Area Council",
    "state": "DC, MD, VA",
-   "website": "https://www.ncacbsa.org/",
+   "website": "https://ncacscouting.org/",
    "summary": "Approved national historic trail run by the National Capital Area Council (Bethesda, MD). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1446,7 +1445,7 @@
    "unit": "National Capital Area Council",
    "city": "Washington",
    "state": "DC",
-   "website": "https://www.ncacbsa.org/",
+   "website": "https://ncacscouting.org/",
    "summary": "Approved national historic trail run by the National Capital Area Council (Bethesda, MD). Contact the council for the trailhead, requirements, and the Historic Trails Award. Approved 5/9/2005."
   },
   {
@@ -1457,7 +1456,7 @@
    "org": "Scouting America",
    "unit": "South Florida Council",
    "state": "FL",
-   "website": "https://sfcbsa.org/",
+   "website": "https://sfcscouting.org/",
    "summary": "Approved national historic trail run by the South Florida Council (Miami Lakes, FL). Contact the council for the trailhead, requirements, and the Historic Trails Award. Approved 12/15/2006."
   },
   {
@@ -1527,7 +1526,7 @@
    "org": "Scouting America",
    "unit": "Coastal Georgia Council",
    "state": "GA",
-   "website": "http://www.coastalgeorgiabsa.org/",
+   "website": "https://coastalgeorgiabsa.org/",
    "summary": "Approved national historic trail run by the Coastal Georgia Council (Valdosta, GA). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1539,7 +1538,7 @@
    "unit": "Aloha Council",
    "city": "Hilo",
    "state": "HI",
-   "website": "http://scoutinghawaii.org/",
+   "website": "https://www.scoutinghawaii.org/",
    "summary": "Approved national historic trail run by the Aloha Council (Honolulu, HI). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1551,7 +1550,7 @@
    "unit": "Aloha Council",
    "city": "Honolulu",
    "state": "HI",
-   "website": "http://scoutinghawaii.org/",
+   "website": "https://www.scoutinghawaii.org/",
    "summary": "Approved national historic trail run by the Aloha Council (Honolulu, HI). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1584,7 +1583,7 @@
    "org": "Scouting America",
    "unit": "Mississippi Valley Council",
    "state": "IL",
-   "website": "https://www.mississippivalleybsa.org/",
+   "website": "https://mvcscouting.org/",
    "summary": "Approved national historic trail run by the Mississippi Valley Council (Quincy, IL). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1606,7 +1605,7 @@
    "org": "Scouting America",
    "unit": "Anthony Wayne Area Council",
    "state": "IN",
-   "website": "http://www.awacbsa.com/",
+   "website": "https://www.awac.org/",
    "summary": "Approved national historic trail run by the Anthony Wayne Area Council (Fort Wayne, IN). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1617,7 +1616,7 @@
    "org": "Scouting America",
    "unit": "Anthony Wayne Area Council",
    "state": "IN",
-   "website": "http://www.awacbsa.com/",
+   "website": "https://www.awac.org/",
    "summary": "Approved national historic trail run by the Anthony Wayne Area Council (Fort Wayne, IN). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1628,7 +1627,7 @@
    "org": "Scouting America",
    "unit": "Anthony Wayne Area Council",
    "state": "IN",
-   "website": "http://www.awacbsa.com/",
+   "website": "https://www.awac.org/",
    "summary": "Approved national historic trail run by the Anthony Wayne Area Council (Fort Wayne, IN). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1639,7 +1638,7 @@
    "org": "Scouting America",
    "unit": "Anthony Wayne Area Council",
    "state": "IN",
-   "website": "http://www.awacbsa.com/",
+   "website": "https://www.awac.org/",
    "summary": "Approved national historic trail run by the Anthony Wayne Area Council (Fort Wayne, IN). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1650,7 +1649,7 @@
    "org": "Scouting America",
    "unit": "Anthony Wayne Area Council",
    "state": "IN",
-   "website": "http://www.awacbsa.com/",
+   "website": "https://www.awac.org/",
    "summary": "Approved national historic trail run by the Anthony Wayne Area Council (Fort Wayne, IN). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1661,7 +1660,7 @@
    "org": "Scouting America",
    "unit": "Hawkeye Area Council",
    "state": "IA",
-   "website": "http://www.hawkeyebsa.org/",
+   "website": "https://hawkeyescouting.org/",
    "summary": "Approved national historic trail run by the Hawkeye Area Council (Cedar Rapids, IA). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1672,7 +1671,7 @@
    "org": "Scouting America",
    "unit": "Hawkeye Area Council",
    "state": "IA",
-   "website": "http://www.hawkeyebsa.org/",
+   "website": "https://hawkeyescouting.org/",
    "summary": "Approved national historic trail run by the Hawkeye Area Council (Cedar Rapids, IA). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1683,7 +1682,7 @@
    "org": "Scouting America",
    "unit": "Mid Iowa Council",
    "state": "IA",
-   "website": "https://www.midiowacouncilbsa.org/",
+   "website": "https://scoutingiowa.org/",
    "summary": "Approved national historic trail run by the Mid Iowa Council (Des Moines, IA). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1694,7 +1693,7 @@
    "org": "Scouting America",
    "unit": "Mid Iowa Council",
    "state": "IA",
-   "website": "https://www.midiowacouncilbsa.org/",
+   "website": "https://scoutingiowa.org/",
    "summary": "Approved national historic trail run by the Mid Iowa Council (Des Moines, IA). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1705,7 +1704,7 @@
    "org": "Scouting America",
    "unit": "Mid Iowa Council",
    "state": "IA",
-   "website": "https://www.midiowacouncilbsa.org/",
+   "website": "https://scoutingiowa.org/",
    "summary": "Approved national historic trail run by the Mid Iowa Council (Des Moines, IA). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1716,7 +1715,7 @@
    "org": "Scouting America",
    "unit": "Jayhawk Area Council",
    "state": "KS",
-   "website": "http://www.jayhawkcouncil.org/",
+   "website": "https://jayhawkcouncil.org/",
    "summary": "Approved national historic trail run by the Jayhawk Area Council (Topeka, KS). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1727,7 +1726,7 @@
    "org": "Scouting America",
    "unit": "Jayhawk Area Council",
    "state": "KS",
-   "website": "http://www.jayhawkcouncil.org/",
+   "website": "https://jayhawkcouncil.org/",
    "summary": "Approved national historic trail run by the Jayhawk Area Council (Topeka, KS). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1738,7 +1737,7 @@
    "org": "Scouting America",
    "unit": "Jayhawk Area Council",
    "state": "KS",
-   "website": "http://www.jayhawkcouncil.org/",
+   "website": "https://jayhawkcouncil.org/",
    "summary": "Approved national historic trail run by the Jayhawk Area Council (Topeka, KS). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1749,7 +1748,7 @@
    "org": "Scouting America",
    "unit": "Blue Grass Council",
    "state": "KY",
-   "website": "http://www.bgbsa.org/",
+   "website": "https://bgcscouting.org/",
    "summary": "Approved national historic trail run by the Blue Grass Council (Lexington, KY). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1760,7 +1759,7 @@
    "org": "Scouting America",
    "unit": "Blue Grass Council",
    "state": "KY",
-   "website": "http://www.bgbsa.org/",
+   "website": "https://bgcscouting.org/",
    "summary": "Approved national historic trail run by the Blue Grass Council (Lexington, KY). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1771,7 +1770,7 @@
    "org": "Scouting America",
    "unit": "Baltimore Area Council",
    "state": "MD",
-   "website": "http://www.baltimorebsa.org/",
+   "website": "https://baltimorescouting.org/",
    "summary": "Approved national historic trail run by the Baltimore Area Council (Baltimore, MD). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1782,7 +1781,7 @@
    "org": "Scouting America",
    "unit": "Baltimore Area Council",
    "state": "MD",
-   "website": "http://www.baltimorebsa.org/",
+   "website": "https://baltimorescouting.org/",
    "summary": "Approved national historic trail run by the Baltimore Area Council (Baltimore, MD). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -1952,7 +1951,7 @@
    "org": "Scouting America",
    "unit": "Northern Star Council",
    "state": "MN",
-   "website": "http://www.northernstarbsa.org/",
+   "website": "https://www.northernstar.org/",
    "summary": "Approved national historic trail run by the Northern Star Council (St. Paul, MN). Contact the council for the trailhead, requirements, and the Historic Trails Award. Renewed 5/15/2015; originally approved 8/1/2012."
   },
   {
@@ -1963,7 +1962,7 @@
    "org": "Scouting America",
    "unit": "Northern Star Council",
    "state": "MN",
-   "website": "http://www.northernstarbsa.org/",
+   "website": "https://www.northernstar.org/",
    "summary": "Approved national historic trail run by the Northern Star Council (St. Paul, MN). Contact the council for the trailhead, requirements, and the Historic Trails Award. Renewed 5/15/2015; originally approved 1/1/1992."
   },
   {
@@ -1974,7 +1973,7 @@
    "org": "Scouting America",
    "unit": "Northern Star Council",
    "state": "MN",
-   "website": "http://www.northernstarbsa.org/",
+   "website": "https://www.northernstar.org/",
    "summary": "Approved national historic trail run by the Northern Star Council (St. Paul, MN). Contact the council for the trailhead, requirements, and the Historic Trails Award. Renewed 5/15/2015; originally approved 1/1/1994."
   },
   {
@@ -2195,7 +2194,7 @@
    "org": "Scouting America",
    "unit": "Northern New Jersey Council",
    "state": "NJ",
-   "website": "http://www.nnjbsa.org/",
+   "website": "https://scoutingnnj.org/",
    "summary": "Approved national historic trail run by the Northern New Jersey Council (Oakland, NJ). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2217,7 +2216,7 @@
    "org": "Scouting America",
    "unit": "Monmouth Council",
    "state": "NJ",
-   "website": "https://www.monmouthbsa.org/",
+   "website": "https://www.monmouthcouncilscouting.org/",
    "summary": "Approved national historic trail run by the Monmouth Council (Morganville, NJ). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2228,7 +2227,7 @@
    "org": "Scouting America",
    "unit": "Patriots' Path Council",
    "state": "NJ",
-   "website": "https://ppcbsa.org/",
+   "website": "https://ppcscouting.org/",
    "summary": "Approved national historic trail run by the Patriots' Path Council (Cedar Knolls, NJ). Contact the council for the trailhead, requirements, and the Historic Trails Award. Renewal application approved."
   },
   {
@@ -2239,7 +2238,7 @@
    "org": "Scouting America",
    "unit": "Patriots' Path Council",
    "state": "NJ",
-   "website": "https://ppcbsa.org/",
+   "website": "https://ppcscouting.org/",
    "summary": "Approved national historic trail run by the Patriots' Path Council (Cedar Knolls, NJ). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2273,7 +2272,7 @@
    "org": "Scouting America",
    "unit": "Longhouse Council",
    "state": "NY",
-   "website": "http://www.cnyscouts.org/",
+   "website": "https://cnyscouts.org/",
    "summary": "Approved national historic trail run by the Longhouse Council (Syracuse, NY). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2306,7 +2305,7 @@
    "org": "Scouting America",
    "unit": "Theodore Roosevelt Council",
    "state": "NY",
-   "website": "https://trcbsa.org/",
+   "website": "https://www.trcscouts.org/",
    "summary": "Approved national historic trail run by the Theodore Roosevelt Council (Massapequa, NY). Contact the council for the trailhead, requirements, and the Historic Trails Award. At Onteora Scout Reservation.",
    "infoUrl": "https://www.osrtrails.org/history-trail"
   },
@@ -2318,7 +2317,7 @@
    "org": "Scouting America",
    "unit": "Seneca Waterways Council",
    "state": "NY",
-   "website": "https://www.senecawaterways.org/",
+   "website": "https://senecawaterways.org/",
    "summary": "Approved national historic trail run by the Seneca Waterways Council (Rochester, NY). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2329,7 +2328,7 @@
    "org": "Scouting America",
    "unit": "Seneca Waterways Council",
    "state": "NY",
-   "website": "https://www.senecawaterways.org/",
+   "website": "https://senecawaterways.org/",
    "summary": "Approved national historic trail run by the Seneca Waterways Council (Rochester, NY). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2384,7 +2383,7 @@
    "org": "Scouting America",
    "unit": "Cape Fear Council",
    "state": "NC",
-   "website": "https://www.capefearcouncilbsa.org/",
+   "website": "https://www.capefearscouting.org/",
    "summary": "Approved national historic trail run by the Cape Fear Council (Wilmington, NC). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2395,7 +2394,7 @@
    "org": "Scouting America",
    "unit": "Cape Fear Council",
    "state": "NC",
-   "website": "https://www.capefearcouncilbsa.org/",
+   "website": "https://www.capefearscouting.org/",
    "summary": "Approved national historic trail run by the Cape Fear Council (Wilmington, NC). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2406,7 +2405,7 @@
    "org": "Scouting America",
    "unit": "Northern Lights Council",
    "state": "ND",
-   "website": "http://www.nlcbsa.org/",
+   "website": "https://scoutingnlc.org/",
    "summary": "Approved national historic trail run by the Northern Lights Council (Fargo, ND). Contact the council for the trailhead, requirements, and the Historic Trails Award. Approved 12/1/2006."
   },
   {
@@ -2506,7 +2505,7 @@
    "org": "Scouting America",
    "unit": "Cascade Pacific Council",
    "state": "OR",
-   "website": "https://www.cpcbsa.org/",
+   "website": "https://cpcscouting.org/",
    "summary": "Approved national historic trail run by the Cascade Pacific Council (Portland, OR). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2518,7 +2517,7 @@
    "unit": "Cascade Pacific Council",
    "city": "Portland",
    "state": "OR",
-   "website": "https://www.cpcbsa.org/",
+   "website": "https://cpcscouting.org/",
    "summary": "Approved national historic trail run by the Cascade Pacific Council (Portland, OR). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2529,7 +2528,7 @@
    "org": "Scouting America",
    "unit": "Cascade Pacific Council",
    "state": "OR",
-   "website": "https://www.cpcbsa.org/",
+   "website": "https://cpcscouting.org/",
    "summary": "Approved national historic trail run by the Cascade Pacific Council (Portland, OR). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2596,7 +2595,7 @@
    "unit": "Cradle of Liberty Council",
    "city": "Philadelphia",
    "state": "PA",
-   "website": "https://colbsa.org/",
+   "website": "https://scoutingphilly.org/",
    "summary": "Approved national historic trail run by the Cradle of Liberty Council (Philadelphia, PA). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2607,7 +2606,7 @@
    "org": "Scouting America",
    "unit": "Cradle of Liberty Council",
    "state": "PA",
-   "website": "https://colbsa.org/",
+   "website": "https://scoutingphilly.org/",
    "summary": "Approved national historic trail run by the Cradle of Liberty Council (Philadelphia, PA). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2618,7 +2617,7 @@
    "org": "Scouting America",
    "unit": "Cradle of Liberty Council",
    "state": "PA",
-   "website": "https://colbsa.org/",
+   "website": "https://scoutingphilly.org/",
    "summary": "Approved national historic trail run by the Cradle of Liberty Council (Philadelphia, PA). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2629,7 +2628,7 @@
    "org": "Scouting America",
    "unit": "Cradle of Liberty Council",
    "state": "PA",
-   "website": "https://colbsa.org/",
+   "website": "https://scoutingphilly.org/",
    "summary": "Approved national historic trail run by the Cradle of Liberty Council (Philadelphia, PA). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2640,7 +2639,7 @@
    "org": "Scouting America",
    "unit": "Cradle of Liberty Council",
    "state": "PA",
-   "website": "https://colbsa.org/",
+   "website": "https://scoutingphilly.org/",
    "summary": "Approved national historic trail run by the Cradle of Liberty Council (Philadelphia, PA). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2651,7 +2650,7 @@
    "org": "Scouting America",
    "unit": "French Creek Council",
    "state": "PA",
-   "website": "http://frenchcreek-bsa.org/",
+   "website": "https://www.fccscouting.org/",
    "summary": "Approved national historic trail run by the French Creek Council (Erie, PA). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2662,7 +2661,7 @@
    "org": "Scouting America",
    "unit": "French Creek Council",
    "state": "PA",
-   "website": "http://frenchcreek-bsa.org/",
+   "website": "https://www.fccscouting.org/",
    "summary": "Approved national historic trail run by the French Creek Council (Erie, PA). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2673,7 +2672,7 @@
    "org": "Scouting America",
    "unit": "French Creek Council",
    "state": "PA",
-   "website": "http://frenchcreek-bsa.org/",
+   "website": "https://www.fccscouting.org/",
    "summary": "Approved national historic trail run by the French Creek Council (Erie, PA). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2684,7 +2683,7 @@
    "org": "Scouting America",
    "unit": "Susquehanna Council",
    "state": "PA",
-   "website": "http://councils.scouting.org/council533",
+   "website": "https://susquehannascouting.org/",
    "summary": "Approved national historic trail run by the Susquehanna Council (Williamsport, PA). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2817,7 +2816,7 @@
    "org": "Scouting America",
    "unit": "Coastal Carolina Council",
    "state": "SC",
-   "website": "http://www.coastalcarolinabsa.org/",
+   "website": "https://coastalcarolinacouncil.org/",
    "summary": "Approved national historic trail run by the Coastal Carolina Council (Charleston, SC). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2829,7 +2828,7 @@
    "unit": "Coastal Carolina Council",
    "city": "Charleston",
    "state": "SC",
-   "website": "http://www.coastalcarolinabsa.org/",
+   "website": "https://coastalcarolinacouncil.org/",
    "summary": "Approved national historic trail run by the Coastal Carolina Council (Charleston, SC). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2840,7 +2839,7 @@
    "org": "Scouting America",
    "unit": "Blue Ridge Council",
    "state": "SC",
-   "website": "http://blueridgecouncil.org/brcn/",
+   "website": "https://www.blueridgecouncil.org/",
    "summary": "Approved national historic trail run by the Blue Ridge Council (Greenville, SC). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2875,7 +2874,7 @@
    "org": "Scouting America",
    "unit": "Middle Tennessee Council",
    "state": "TN",
-   "website": "https://www.mtcbsa.org/",
+   "website": "https://www.mtcscouting.org/",
    "summary": "Approved national historic trail run by the Middle Tennessee Council (Nashville, TN). Contact the council for the trailhead, requirements, and the Historic Trails Award. At the national military park."
   },
   {
@@ -2887,7 +2886,7 @@
    "unit": "Middle Tennessee Council",
    "city": "Franklin",
    "state": "TN",
-   "website": "https://www.mtcbsa.org/",
+   "website": "https://www.mtcscouting.org/",
    "summary": "Approved national historic trail run by the Middle Tennessee Council (Nashville, TN). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2898,7 +2897,7 @@
    "org": "Scouting America",
    "unit": "Capitol Area Council",
    "state": "TX",
-   "website": "http://www.bsacac.org/",
+   "website": "https://www.capitolareascouting.org/",
    "summary": "Approved national historic trail run by the Capitol Area Council (Austin, TX). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -2921,7 +2920,7 @@
    "unit": "Yucca Council",
    "city": "Cloudcroft",
    "state": "NM",
-   "website": "http://www.yuccabsa.org/",
+   "website": "https://www.scoutingamericahighdesertcouncil.org/",
    "summary": "Approved national historic trail run by the Yucca Council (El Paso, TX). Contact the council for the trailhead, requirements, and the Historic Trails Award. 2.6 miles. On the National Register of Historic Places (NRHP 79001543)."
   },
   {
@@ -2932,7 +2931,7 @@
    "org": "Scouting America",
    "unit": "Sam Houston Area Council",
    "state": "TX",
-   "website": "http://www.samhoustonbsa.org/",
+   "website": "https://shacbsa.org/",
    "summary": "Approved national historic trail run by the Sam Houston Area Council (Houston, TX). Contact the council for the trailhead, requirements, and the Historic Trails Award. Seasonal: March and April."
   },
   {
@@ -2954,7 +2953,7 @@
    "org": "Scouting America",
    "unit": "Alamo Area Council",
    "state": "TX",
-   "website": "http://www.alamoareabsa.org/",
+   "website": "https://www.alamoareascouting.org/",
    "summary": "Approved national historic trail run by the Alamo Area Council (San Antonio, TX). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -3055,7 +3054,7 @@
    "unit": "Mount Baker Council",
    "city": "San Juan Island",
    "state": "WA",
-   "website": "https://www.mountbakerbsa.org/",
+   "website": "https://mountbakerscouting.org/",
    "summary": "Approved national historic trail run by the Mount Baker Council (Everett, WA). Contact the council for the trailhead, requirements, and the Historic Trails Award. Runs between American Camp and English Camp."
   },
   {
@@ -3066,7 +3065,7 @@
    "org": "Scouting America",
    "unit": "Chief Seattle Council",
    "state": "WA",
-   "website": "http://seattlebsa.org/",
+   "website": "https://scoutingseattle.org/",
    "summary": "Approved national historic trail run by the Chief Seattle Council (Seattle, WA). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -3077,7 +3076,7 @@
    "org": "Scouting America",
    "unit": "Chief Seattle Council",
    "state": "WA",
-   "website": "http://seattlebsa.org/",
+   "website": "https://scoutingseattle.org/",
    "summary": "Approved national historic trail run by the Chief Seattle Council (Seattle, WA). Contact the council for the trailhead, requirements, and the Historic Trails Award. The council suggests Judy Bentley's book Hiking Washington History."
   },
   {
@@ -3088,7 +3087,7 @@
    "org": "Scouting America",
    "unit": "Great Alaska Council",
    "state": "AK",
-   "website": "https://www.scoutingalaska.org/",
+   "website": "https://scoutingalaska.org/",
    "summary": "Approved national historic trail run by the Great Alaska Council (Anchorage, AK). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -3156,7 +3155,7 @@
    "org": "Scouting America",
    "unit": "Greater New York Councils",
    "state": "NY",
-   "website": "https://www.bsa-gnyc.org/",
+   "website": "https://nycscouting.org/",
    "summary": "Approved national historic trail run by the Greater New York Councils (New York, NY). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -3167,7 +3166,7 @@
    "org": "Scouting America",
    "unit": "Greater New York Councils",
    "state": "NY",
-   "website": "https://www.bsa-gnyc.org/",
+   "website": "https://nycscouting.org/",
    "summary": "Approved national historic trail run by the Greater New York Councils (New York, NY). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -3178,7 +3177,7 @@
    "org": "Scouting America",
    "unit": "Greater New York Councils",
    "state": "NY",
-   "website": "https://www.bsa-gnyc.org/",
+   "website": "https://nycscouting.org/",
    "summary": "Approved national historic trail run by the Greater New York Councils (New York, NY). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -3189,7 +3188,7 @@
    "org": "Scouting America",
    "unit": "Greater New York Councils",
    "state": "NY",
-   "website": "https://www.bsa-gnyc.org/",
+   "website": "https://nycscouting.org/",
    "summary": "Approved national historic trail run by the Greater New York Councils (New York, NY). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -3200,7 +3199,7 @@
    "org": "Scouting America",
    "unit": "Greater New York Councils",
    "state": "NY",
-   "website": "https://www.bsa-gnyc.org/",
+   "website": "https://nycscouting.org/",
    "summary": "Approved national historic trail run by the Greater New York Councils (New York, NY). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -3267,7 +3266,7 @@
    "org": "Scouting America",
    "unit": "Texas Southwest Council",
    "state": "TX",
-   "website": "http://tswcbsa.org/",
+   "website": "https://www.scoutingtsc.org/",
    "summary": "Approved national historic trail run by the Texas Southwest Council (San Angelo, TX). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -3278,7 +3277,7 @@
    "org": "Scouting America",
    "unit": "Texas Southwest Council",
    "state": "TX",
-   "website": "http://tswcbsa.org/",
+   "website": "https://www.scoutingtsc.org/",
    "summary": "Approved national historic trail run by the Texas Southwest Council (San Angelo, TX). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -3289,7 +3288,7 @@
    "org": "Scouting America",
    "unit": "Texas Southwest Council",
    "state": "TX",
-   "website": "http://tswcbsa.org/",
+   "website": "https://www.scoutingtsc.org/",
    "summary": "Approved national historic trail run by the Texas Southwest Council (San Angelo, TX). Contact the council for the trailhead, requirements, and the Historic Trails Award."
   },
   {
@@ -3333,7 +3332,7 @@
    "org": "Scouting America",
    "unit": "Michigan Crossroads Council",
    "state": "MI",
-   "website": "http://www.michiganscouting.org/",
+   "website": "https://michiganscouting.org/",
    "summary": "Approved national historic trail run by the Michigan Crossroads Council (Flint, MI). Contact the council for the trailhead, requirements, and the Historic Trails Award. Originally approved under Council #272 (Michigan Crossroads)."
   },
   {
@@ -3344,7 +3343,7 @@
    "org": "Scouting America",
    "unit": "Michigan Crossroads Council",
    "state": "MI",
-   "website": "http://www.michiganscouting.org/",
+   "website": "https://michiganscouting.org/",
    "summary": "Approved national historic trail run by the Michigan Crossroads Council (Flint, MI). Contact the council for the trailhead, requirements, and the Historic Trails Award. Originally approved under Council #272 (Michigan Crossroads)."
   },
   {
@@ -3355,7 +3354,7 @@
    "org": "Scouting America",
    "unit": "Michigan Crossroads Council",
    "state": "MI",
-   "website": "http://www.michiganscouting.org/",
+   "website": "https://michiganscouting.org/",
    "summary": "Approved national historic trail run by the Michigan Crossroads Council (Flint, MI). Contact the council for the trailhead, requirements, and the Historic Trails Award. Originally approved under Council #272 (Michigan Crossroads)."
   },
   {
@@ -3378,7 +3377,7 @@
    "org": "Scouting America",
    "unit": "Transatlantic Council",
    "city": "Vienna, Austria",
-   "website": "https://www.tac-bsa.org/",
+   "website": "https://tacscouting.org/",
    "summary": "Approved national historic trail run by the Transatlantic Council. Contact the council for the trailhead, requirements, and the Historic Trails Award.",
    "infoUrl": "https://247scouting.com/web/BSA802/attachment/document_15730536550_7466.pdf"
   },
@@ -3390,7 +3389,7 @@
    "org": "Scouting America",
    "unit": "Transatlantic Council",
    "city": "Bastogne, Belgium",
-   "website": "https://www.tac-bsa.org/",
+   "website": "https://tacscouting.org/",
    "summary": "Approved national historic trail run by the Transatlantic Council. Contact the council for the trailhead, requirements, and the Historic Trails Award.",
    "infoUrl": "https://247scouting.com/web/BSA802/attachment/document_15729513700_7466.pdf"
   },
@@ -3402,7 +3401,7 @@
    "org": "Scouting America",
    "unit": "Transatlantic Council",
    "city": "Flanders Field, Belgium",
-   "website": "https://www.tac-bsa.org/",
+   "website": "https://tacscouting.org/",
    "summary": "Approved national historic trail run by the Transatlantic Council. Contact the council for the trailhead, requirements, and the Historic Trails Award.",
    "infoUrl": "https://247scouting.com/web/BSA802/attachment/document_15730548930_7466.pdf"
   },
@@ -3414,7 +3413,7 @@
    "org": "Scouting America",
    "unit": "Transatlantic Council",
    "city": "Waterloo, Belgium",
-   "website": "https://www.tac-bsa.org/",
+   "website": "https://tacscouting.org/",
    "summary": "Approved national historic trail run by the Transatlantic Council. Contact the council for the trailhead, requirements, and the Historic Trails Award.",
    "infoUrl": "https://247scouting.com/web/BSA802/attachment/document_15730537120_7466.pdf"
   },
@@ -3426,7 +3425,7 @@
    "org": "Scouting America",
    "unit": "Transatlantic Council",
    "city": "Prague, Czech Republic",
-   "website": "https://www.tac-bsa.org/",
+   "website": "https://tacscouting.org/",
    "summary": "Approved national historic trail run by the Transatlantic Council. Contact the council for the trailhead, requirements, and the Historic Trails Award.",
    "infoUrl": "https://247scouting.com/web/BSA802/attachment/document_15730537560_7466.pdf"
   },
@@ -3438,7 +3437,7 @@
    "org": "Scouting America",
    "unit": "Transatlantic Council",
    "city": "Meuse-Argonne, France",
-   "website": "https://www.tac-bsa.org/",
+   "website": "https://tacscouting.org/",
    "summary": "Approved national historic trail run by the Transatlantic Council. Contact the council for the trailhead, requirements, and the Historic Trails Award.",
    "infoUrl": "https://247scouting.com/web/BSA802/attachment/document_15730537940_7466.pdf"
   },
@@ -3450,7 +3449,7 @@
    "org": "Scouting America",
    "unit": "Transatlantic Council",
    "city": "Omaha Beach, France",
-   "website": "https://www.tac-bsa.org/",
+   "website": "https://tacscouting.org/",
    "summary": "Approved national historic trail run by the Transatlantic Council. Contact the council for the trailhead, requirements, and the Historic Trails Award.",
    "infoUrl": "https://247scouting.com/web/BSA802/attachment/document_15730538530_7466.pdf"
   },
@@ -3462,7 +3461,7 @@
    "org": "Scouting America",
    "unit": "Transatlantic Council",
    "city": "Paris, France",
-   "website": "https://www.tac-bsa.org/",
+   "website": "https://tacscouting.org/",
    "summary": "Approved national historic trail run by the Transatlantic Council. Contact the council for the trailhead, requirements, and the Historic Trails Award.",
    "infoUrl": "https://247scouting.com/web/BSA802/attachment/document_15730538830_7466.pdf"
   },
@@ -3474,7 +3473,7 @@
    "org": "Scouting America",
    "unit": "Transatlantic Council",
    "city": "Berlin, Germany",
-   "website": "https://www.tac-bsa.org/",
+   "website": "https://tacscouting.org/",
    "summary": "Approved national historic trail run by the Transatlantic Council. Contact the council for the trailhead, requirements, and the Historic Trails Award.",
    "infoUrl": "https://247scouting.com/web/BSA802/attachment/document_15729522240_7466.pdf"
   },
@@ -3486,7 +3485,7 @@
    "org": "Scouting America",
    "unit": "Transatlantic Council",
    "city": "Heidelberg, Germany",
-   "website": "https://www.tac-bsa.org/",
+   "website": "https://tacscouting.org/",
    "summary": "Approved national historic trail run by the Transatlantic Council. Contact the council for the trailhead, requirements, and the Historic Trails Award.",
    "infoUrl": "https://247scouting.com/web/BSA802/attachment/document_15730539340_7466.pdf"
   },
@@ -3498,7 +3497,7 @@
    "org": "Scouting America",
    "unit": "Transatlantic Council",
    "city": "Nuremberg, Germany",
-   "website": "https://www.tac-bsa.org/",
+   "website": "https://tacscouting.org/",
    "summary": "Approved national historic trail run by the Transatlantic Council. Contact the council for the trailhead, requirements, and the Historic Trails Award.",
    "infoUrl": "https://247scouting.com/web/BSA802/attachment/document_15730539580_7466.pdf"
   },
@@ -3510,7 +3509,7 @@
    "org": "Scouting America",
    "unit": "Transatlantic Council",
    "city": "Wiesbaden, Germany",
-   "website": "https://www.tac-bsa.org/",
+   "website": "https://tacscouting.org/",
    "summary": "Approved national historic trail run by the Transatlantic Council. Contact the council for the trailhead, requirements, and the Historic Trails Award.",
    "infoUrl": "https://247scouting.com/web/BSA802/attachment/document_15730539730_7466.pdf"
   },
@@ -3522,7 +3521,7 @@
    "org": "Scouting America",
    "unit": "Transatlantic Council",
    "city": "Pisa, Italy",
-   "website": "https://www.tac-bsa.org/",
+   "website": "https://tacscouting.org/",
    "summary": "Approved national historic trail run by the Transatlantic Council. Contact the council for the trailhead, requirements, and the Historic Trails Award.",
    "infoUrl": "https://247scouting.com/web/BSA802/attachment/document_15730539830_7466.pdf"
   },
@@ -3534,7 +3533,7 @@
    "org": "Scouting America",
    "unit": "Transatlantic Council",
    "city": "Rome, Italy",
-   "website": "https://www.tac-bsa.org/",
+   "website": "https://tacscouting.org/",
    "summary": "Approved national historic trail run by the Transatlantic Council. Contact the council for the trailhead, requirements, and the Historic Trails Award.",
    "infoUrl": "https://247scouting.com/web/BSA802/attachment/document_15730539970_7466.pdf"
   },
@@ -3546,7 +3545,7 @@
    "org": "Scouting America",
    "unit": "Transatlantic Council",
    "city": "Verona, Italy",
-   "website": "https://www.tac-bsa.org/",
+   "website": "https://tacscouting.org/",
    "summary": "Approved national historic trail run by the Transatlantic Council. Contact the council for the trailhead, requirements, and the Historic Trails Award.",
    "infoUrl": "https://247scouting.com/web/BSA802/attachment/document_15730540070_7466.pdf"
   },
@@ -3558,7 +3557,7 @@
    "org": "Scouting America",
    "unit": "Transatlantic Council",
    "city": "The Hague, Netherlands",
-   "website": "https://www.tac-bsa.org/",
+   "website": "https://tacscouting.org/",
    "summary": "Approved national historic trail run by the Transatlantic Council. Contact the council for the trailhead, requirements, and the Historic Trails Award.",
    "infoUrl": "https://247scouting.com/web/BSA802/attachment/document_15730540190_7466.pdf"
   },
@@ -3570,7 +3569,7 @@
    "org": "Scouting America",
    "unit": "Transatlantic Council",
    "city": "London, United Kingdom",
-   "website": "https://www.tac-bsa.org/",
+   "website": "https://tacscouting.org/",
    "summary": "Approved national historic trail run by the Transatlantic Council. Contact the council for the trailhead, requirements, and the Historic Trails Award.",
    "infoUrl": "https://247scouting.com/web/BSA802/attachment/document_15730540310_7466.pdf"
   }
