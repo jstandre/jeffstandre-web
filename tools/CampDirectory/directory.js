@@ -31,7 +31,7 @@ const TABS = [
 ];
 
 const CATEGORY_NOTES = {
-  scouting: 'Scouting America\'s national high adventure bases, every approved National Historic Trail, and the councils that run them. Set <strong>Type → Historic Trail</strong> to see just the trails, or sort by <strong>Managing unit</strong> to group them by council. Council camps aren\'t bundled yet, so add the camps you use with <strong>+ Add entry</strong> or import a CSV. Find any council at <a href="https://beascout.scouting.org/" target="_blank" rel="noopener">beascout.scouting.org</a>.',
+  scouting: 'Scouting America\'s national high adventure bases, every approved National Historic Trail, the 99 councils that run those trails, and those councils\' camps. Use <strong>Type</strong> to pick Council Camp, Historic Trail, or Council, or sort by <strong>Managing unit</strong> to group everything by council. Camps for other councils aren\'t bundled yet; add yours with <strong>+ Add entry</strong> or import a CSV. Find any council at <a href="https://beascout.scouting.org/" target="_blank" rel="noopener">beascout.scouting.org</a>.',
   nps: 'All 63 national parks plus every campground in the national park system. Set <strong>Type → National Park</strong> to see only the parks.',
   state: 'Each entry is a state\'s official park system, with a link to its full list of parks. Add the individual parks you use, or import a list as a CSV.',
   usace: 'Army Corps of Engineers campgrounds from Recreation.gov. Sort by <strong>Managing unit</strong> to see each lake or project\'s campgrounds together.',
@@ -171,9 +171,10 @@ async function fetchJson(url) {
 }
 
 async function loadData() {
-  const [curated, trails, campgrounds] = await Promise.allSettled([
+  const [curated, trails, councilCamps, campgrounds] = await Promise.allSettled([
     fetchJson('data/curated.json'),
     fetchJson('data/scouting-historic-trails.json'),
+    fetchJson('data/scouting-council-camps.json'),
     fetchJson('data/federal-campgrounds.json')
   ]);
 
@@ -191,6 +192,12 @@ async function loadData() {
     console.error(trails.reason);
   }
 
+  if (councilCamps.status === 'fulfilled') {
+    councilCamps.value.entries.forEach(e => list.push({ ...e, source: 'councilCamps' }));
+  } else {
+    console.error(councilCamps.reason);
+  }
+
   if (campgrounds.status === 'fulfilled') {
     campgroundSource = campgrounds.value.source;
     const { fields, flags, rows } = campgrounds.value;
@@ -199,8 +206,9 @@ async function loadData() {
     console.error(campgrounds.reason);
   }
 
-  const failed = [curated, trails, campgrounds].filter(r => r.status === 'rejected').length;
-  if (failed === 3) {
+  const results = [curated, trails, councilCamps, campgrounds];
+  const failed = results.filter(r => r.status === 'rejected').length;
+  if (failed === results.length) {
     throw new Error('No directory data could be loaded.');
   }
   if (failed) {
@@ -332,6 +340,12 @@ function formatNumber(n) {
 function locationLine(rec) {
   const place = [rec.city, rec.states.join(', ')].filter(Boolean).join(', ');
   return [rec.unit, place].filter(Boolean).join(' · ');
+}
+
+/** "123 Main St, Springfield, IL 62701" style postal address. */
+function postalAddress(rec) {
+  const cityState = [rec.city, rec.states.join(', ')].filter(Boolean).join(', ');
+  return [rec.address, [cityState, rec.zip].filter(Boolean).join(' ')].filter(Boolean).join(', ');
 }
 
 function mapsUrl(rec) {
@@ -649,6 +663,9 @@ function sourceLine(rec) {
     const when = src && (src.snapshot || src.built);
     return `From Campsite Atlas open data, which is cleaned from the Recreation.gov RIDB${when ? ` (snapshot ${when})` : ''}.`;
   }
+  if (rec.source === 'councilCamps') {
+    return 'Found by web search of council camp pages in September 2026. Confirm details with the council before you go.';
+  }
   if (rec.source === 'trails') {
     const updated = trailsSource && trailsSource.updated ? ` (updated ${trailsSource.updated})` : '';
     return `From Scouting America's National Historic Trails list${updated}. Confirm details with the council.`;
@@ -663,9 +680,7 @@ function openDetail(id, { updateHash = true } = {}) {
   const cat = CATEGORIES[rec.category];
   const starred = favorites.has(rec.id);
   const tags = amenityTags(rec);
-  const place = rec.address || rec.city || rec.zip
-    ? [rec.address, [rec.city, rec.states.join(', ')].filter(Boolean).join(', '), rec.zip].filter(Boolean).join(', ')
-    : '';
+  const place = rec.address || rec.city || rec.zip ? postalAddress(rec) : '';
   const tel = telHref(rec.phone);
   const mail = mailHref(rec.email);
   const maps = mapsUrl(rec);
@@ -749,7 +764,7 @@ function detailText(rec) {
     rec.name,
     [rec.kind, CATEGORIES[rec.category]?.label].filter(Boolean).join(' · '),
     rec.org, rec.unit,
-    [rec.address, rec.city, rec.states.join(', '), rec.zip].filter(Boolean).join(', '),
+    postalAddress(rec),
     rec.contact && `Contact: ${rec.contact}`,
     rec.phone && `Phone: ${rec.phone}`,
     rec.email && `Email: ${rec.email}`,
