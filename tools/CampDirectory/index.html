@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camp &amp; Park Directory | Jeff St. Andre</title>
+  <meta name="description"
+    content="A searchable directory of Scouting America camps, national parks, state parks, Army Corps of Engineers parks, and other public lands, with contact info you can add to and keep.">
+  <meta name="author" content="Jeff St. Andre">
+  <meta name="theme-color" content="#0a0c10">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Camp &amp; Park Directory | Jeff St. Andre">
+  <meta property="og:description"
+    content="Scouting America camps, national parks, state parks, Army Corps parks, and public lands in one searchable place.">
+  <meta property="og:url" content="https://jeffstandre.com/tools/CampDirectory/">
+  <meta property="og:image" content="https://jeffstandre.com/avatar.png">
+
+  <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+  <link rel="icon" type="image/png" sizes="64x64" href="../../favicon.png">
+  <link rel="apple-touch-icon" href="../../avatar.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="directory.css">
+</head>
+
+<body>
+  <div class="site-wrapper directory-wrapper">
+    <header class="site-header">
+      <div class="header-brand">
+        <a href="../../#writing" class="brand-link">
+          <img src="../../avatar.png" alt="Jeff St. Andre" class="header-avatar" width="48" height="48">
+          <div class="brand-text">
+            <span class="brand-name">Jeff St. Andre</span>
+            <span class="brand-tagline">Security · Systems · Automation</span>
+          </div>
+        </a>
+      </div>
+      <nav class="site-nav">
+        <a href="../../#writing" class="nav-link">Writing</a>
+        <a href="../../#projects" class="nav-link active">Projects</a>
+        <a href="../../#slides" class="nav-link">Talks</a>
+        <a href="https://github.com/jstandre" target="_blank" rel="noopener" class="nav-link external">GitHub <span
+            class="ext-icon">↗</span></a>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <a href="../../#projects" class="back-btn">&larr; Back to Projects</a>
+
+      <div class="section-header">
+        <h1 class="section-title">Camp &amp; Park Directory</h1>
+        <p class="section-lead">Scouting America camps, national parks, state parks, Army Corps of Engineers parks,
+          and other public lands in one searchable place. Add your own camps and contacts, fix details as you learn
+          them, and keep notes. Everything you add is saved in this browser.</p>
+      </div>
+
+      <nav class="category-tabs" id="category-tabs" aria-label="Categories"></nav>
+
+      <section class="toolbar" aria-label="Search and filters">
+        <div class="toolbar-row">
+          <label class="field field-search">
+            <span class="visually-hidden">Search</span>
+            <input type="search" id="search" placeholder="Search by name, lake, forest, council, city, or your notes"
+              autocomplete="off">
+          </label>
+          <label class="field">
+            <span class="field-label">State</span>
+            <select id="state-filter">
+              <option value="">All states</option>
+            </select>
+          </label>
+          <label class="field">
+            <span class="field-label">Type</span>
+            <select id="kind-filter">
+              <option value="">All types</option>
+            </select>
+          </label>
+          <label class="field">
+            <span class="field-label">Sort</span>
+            <select id="sort">
+              <option value="name">Name</option>
+              <option value="state">State</option>
+              <option value="unit">Managing unit</option>
+              <option value="distance">Nearest to me</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="toolbar-row toolbar-row-secondary">
+          <fieldset class="amenity-filters" id="amenity-filters">
+            <legend class="visually-hidden">Campground amenities</legend>
+          </fieldset>
+          <div class="toolbar-actions">
+            <button type="button" class="btn btn-primary" id="add-btn">+ Add entry</button>
+            <button type="button" class="btn" id="import-btn">Import</button>
+            <details class="menu" id="export-menu">
+              <summary class="btn">Export</summary>
+              <div class="menu-panel">
+                <button type="button" data-export="backup">Backup of my data (JSON)</button>
+                <button type="button" data-export="csv">Current results (CSV)</button>
+                <button type="button" data-export="template">Blank import template (CSV)</button>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <p class="category-note" id="category-note" hidden></p>
+
+      <div class="results-bar">
+        <p class="results-count" id="results-count" aria-live="polite">Loading directory…</p>
+        <button type="button" class="link-btn" id="clear-filters" hidden>Clear filters</button>
+      </div>
+
+      <h2 class="visually-hidden">Results</h2>
+      <div class="results" id="results"></div>
+
+      <div class="more-wrap">
+        <button type="button" class="btn" id="show-more" hidden>Show more</button>
+      </div>
+
+      <details class="about-data">
+        <summary>About this data</summary>
+        <div class="about-body">
+          <ul>
+            <li><strong>Federal campgrounds</strong> (Army Corps, Forest Service, National Park Service, BLM,
+              Reclamation, Fish &amp; Wildlife): <span id="campground-count">every campground</span> in the federal
+              recreation system, from
+              <a href="https://github.com/kirkwood-justin/campsite-atlas-data" target="_blank" rel="noopener">Campsite
+                Atlas open data</a>, which is cleaned from the Recreation.gov RIDB export (CC0). Snapshot from
+              <span id="campground-date">September 2026</span>. Phone numbers and current conditions are on each
+              campground's Recreation.gov page.</li>
+            <li><strong>National parks</strong>: all 63, each linked to its official nps.gov home and contact pages.
+            </li>
+            <li><strong>State parks</strong>: the official park agency for all 50 states. Each one links to that
+              state's full list of parks. Individual state parks aren't bundled yet; add the ones you use or import a
+              list.</li>
+            <li><strong>Scouting America</strong>: the four national high adventure bases and the national office.
+              Local council camps aren't bundled; add yours or import your council's list. Find any council at
+              <a href="https://beascout.scouting.org/" target="_blank" rel="noopener">beascout.scouting.org</a>.</li>
+            <li><strong>Your data</strong> (added entries, edits, notes, and stars) stays in this browser. Use
+              <em>Export → Backup</em> to keep a copy or move it to another device, and <em>Import</em> to load it
+              back.</li>
+          </ul>
+          <p>Contact details change. Confirm hours, fees, and phone numbers with the managing office before a trip.
+          </p>
+        </div>
+      </details>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-left">
+        <span>© <span id="year">2026</span> Jeff St. Andre</span>
+        <span class="footer-separator">·</span>
+        <span>Plain HTML, CSS &amp; JavaScript.</span>
+      </div>
+      <div class="footer-right">
+        <a href="../../#projects">Projects</a>
+        <a href="https://github.com/jstandre" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Entry details -->
+  <dialog class="modal" id="detail-dialog" aria-labelledby="detail-title">
+    <div class="modal-inner" id="detail-body"></div>
+  </dialog>
+
+  <!-- Add / edit entry -->
+  <dialog class="modal" id="edit-dialog" aria-labelledby="edit-title">
+    <form class="modal-inner" id="edit-form" method="dialog" novalidate>
+      <div class="modal-head">
+        <h2 class="modal-title" id="edit-title">Add entry</h2>
+        <button type="button" class="icon-btn" data-close aria-label="Close">×</button>
+      </div>
+      <p class="modal-help" id="edit-help"></p>
+
+      <div class="form-grid">
+        <label class="field">
+          <span class="field-label">Category</span>
+          <select name="category" required></select>
+        </label>
+        <label class="field">
+          <span class="field-label">Type</span>
+          <input name="kind" list="kind-suggestions" placeholder="Council Camp, State Park, Campground…">
+        </label>
+        <label class="field field-wide">
+          <span class="field-label">Name <span class="req">required</span></span>
+          <input name="name" required autocomplete="off">
+        </label>
+        <label class="field">
+          <span class="field-label">Organization or council</span>
+          <input name="org" placeholder="e.g. Circle Ten Council">
+        </label>
+        <label class="field">
+          <span class="field-label">Managing unit</span>
+          <input name="unit" placeholder="Lake, forest, district, or office">
+        </label>
+        <label class="field field-wide">
+          <span class="field-label">Street address</span>
+          <input name="address" autocomplete="street-address">
+        </label>
+        <label class="field">
+          <span class="field-label">City</span>
+          <input name="city">
+        </label>
+        <label class="field field-split">
+          <span class="field-label">State</span>
+          <select name="state"></select>
+        </label>
+        <label class="field field-split">
+          <span class="field-label">ZIP</span>
+          <input name="zip" inputmode="numeric">
+        </label>
+        <label class="field">
+          <span class="field-label">Contact person</span>
+          <input name="contact">
+        </label>
+        <label class="field">
+          <span class="field-label">Phone</span>
+          <input name="phone" type="tel">
+        </label>
+        <label class="field">
+          <span class="field-label">Email</span>
+          <input name="email" type="email">
+        </label>
+        <label class="field">
+          <span class="field-label">Website</span>
+          <input name="website" type="url" placeholder="https://">
+        </label>
+        <label class="field">
+          <span class="field-label">Reservations link</span>
+          <input name="bookUrl" type="url" placeholder="https://">
+        </label>
+        <label class="field field-split">
+          <span class="field-label">Latitude</span>
+          <input name="lat" inputmode="decimal" placeholder="36.45">
+        </label>
+        <label class="field field-split">
+          <span class="field-label">Longitude</span>
+          <input name="lon" inputmode="decimal" placeholder="-104.95">
+        </label>
+        <label class="field field-wide">
+          <span class="field-label">Description</span>
+          <textarea name="summary" rows="3" placeholder="Acreage, program areas, what to know before you go"></textarea>
+        </label>
+      </div>
+      <p class="form-error" id="edit-error" role="alert"></p>
+
+      <div class="modal-actions">
+        <button type="button" class="btn" data-close>Cancel</button>
+        <button type="submit" class="btn btn-primary" id="edit-submit">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Import -->
+  <dialog class="modal" id="import-dialog" aria-labelledby="import-title">
+    <div class="modal-inner">
+      <div class="modal-head">
+        <h2 class="modal-title" id="import-title">Import</h2>
+        <button type="button" class="icon-btn" data-close aria-label="Close">×</button>
+      </div>
+      <p class="modal-help">Load a <strong>backup file</strong> exported from this page, or a <strong>CSV
+          spreadsheet</strong> of camps and parks, such as your council's camp list or a state's parks. Imported
+        rows are added to <em>My entries</em>.</p>
+
+      <label class="field">
+        <span class="field-label">Category for rows that don't name one</span>
+        <select id="import-category"></select>
+      </label>
+
+      <label class="file-drop" id="file-drop">
+        <input type="file" id="import-file" accept=".json,.csv,application/json,text/csv">
+        <span class="file-drop-text"><strong>Choose a file</strong> or drop it here (.csv or .json)</span>
+      </label>
+
+      <details class="csv-help">
+        <summary>CSV columns</summary>
+        <p>The first row must be column names. Only <code>name</code> is required; other columns are optional and
+          can be in any order:</p>
+        <p class="mono-list">name, category, type, organization, unit, address, city, state, zip, contact, phone,
+          email, website, reservations, lat, lon, description, notes</p>
+        <p><code>category</code> can be scouting, national park, state park, army corps, or public lands.
+          <code>state</code> can be a two-letter code or a full name. Export → Blank import template gives you a
+          ready-made file.</p>
+      </details>
+
+      <p class="import-result" id="import-result" role="status"></p>
+
+      <div class="modal-actions">
+        <button type="button" class="btn" data-close>Done</button>
+      </div>
+    </div>
+  </dialog>
+
+  <datalist id="kind-suggestions">
+    <option value="Council Camp">
+    <option value="Council Service Center">
+    <option value="State Park">
+    <option value="State Forest">
+    <option value="Campground">
+    <option value="Lake / Project Office">
+    <option value="Ranger District">
+    <option value="Field Office">
+    <option value="Wildlife Refuge">
+    <option value="Park">
+  </datalist>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="directory.js"></script>
+</body>
+
+</html>
