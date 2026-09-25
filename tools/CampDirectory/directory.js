@@ -33,7 +33,7 @@ const TABS = [
 const CATEGORY_NOTES = {
   scouting: 'Scouting America\'s national high adventure bases, every approved National Historic Trail, the 99 councils that run those trails, and those councils\' camps. Use <strong>Type</strong> to pick Council Camp, Historic Trail, or Council, or sort by <strong>Managing unit</strong> to group everything by council. Camps for other councils aren\'t bundled yet; add yours with <strong>+ Add entry</strong> or import a CSV. Find any council at <a href="https://beascout.scouting.org/" target="_blank" rel="noopener">beascout.scouting.org</a>.',
   nps: 'All 63 national parks plus every campground in the national park system. Set <strong>Type → National Park</strong> to see only the parks.',
-  state: 'Each entry is a state\'s official park system, with a link to its full list of parks. Add the individual parks you use, or import a list as a CSV.',
+  state: 'Every Texas state park, natural area, and historic site is listed with its address and phone number. Other states are listed as their official park system, with a link to that state\'s full list of parks; add the individual parks you use, or import a list as a CSV.',
   usace: 'Army Corps of Engineers campgrounds from Recreation.gov. Sort by <strong>Managing unit</strong> to see each lake or project\'s campgrounds together.',
   public: 'Campgrounds on national forests and grasslands, BLM land, Reclamation reservoirs, and wildlife refuges, plus the agencies that run them.',
   mine: 'Entries you\'ve added. They\'re saved in this browser only. Use <strong>Export → Backup</strong> to keep a copy.',
@@ -150,7 +150,7 @@ let baseRecords = [];
 let records = [];
 let byId = new Map();
 let campgroundSource = null;
-let trailsSource = null;
+const dataSources = {};
 
 const ui = {
   category: 'all',
@@ -170,33 +170,32 @@ async function fetchJson(url) {
   return res.json();
 }
 
+// Files whose records are already in directory format, keyed by the source tag
+// each record gets (used for the "where this came from" line).
+const ENTRY_FILES = {
+  curated: 'data/curated.json',
+  trails: 'data/scouting-historic-trails.json',
+  councilCamps: 'data/scouting-council-camps.json',
+  txParks: 'data/texas-state-parks.json'
+};
+
 async function loadData() {
-  const [curated, trails, councilCamps, campgrounds] = await Promise.allSettled([
-    fetchJson('data/curated.json'),
-    fetchJson('data/scouting-historic-trails.json'),
-    fetchJson('data/scouting-council-camps.json'),
-    fetchJson('data/federal-campgrounds.json')
+  const sourceKeys = Object.keys(ENTRY_FILES);
+  const [campgrounds, ...entryFiles] = await Promise.allSettled([
+    fetchJson('data/federal-campgrounds.json'),
+    ...sourceKeys.map(key => fetchJson(ENTRY_FILES[key]))
   ]);
 
   const list = [];
-  if (curated.status === 'fulfilled') {
-    curated.value.entries.forEach(e => list.push({ ...e, source: 'curated' }));
-  } else {
-    console.error(curated.reason);
-  }
-
-  if (trails.status === 'fulfilled') {
-    trailsSource = trails.value.source;
-    trails.value.entries.forEach(e => list.push({ ...e, source: 'trails' }));
-  } else {
-    console.error(trails.reason);
-  }
-
-  if (councilCamps.status === 'fulfilled') {
-    councilCamps.value.entries.forEach(e => list.push({ ...e, source: 'councilCamps' }));
-  } else {
-    console.error(councilCamps.reason);
-  }
+  entryFiles.forEach((result, i) => {
+    const key = sourceKeys[i];
+    if (result.status !== 'fulfilled') {
+      console.error(result.reason);
+      return;
+    }
+    dataSources[key] = result.value.source || null;
+    result.value.entries.forEach(e => list.push({ ...e, source: key }));
+  });
 
   if (campgrounds.status === 'fulfilled') {
     campgroundSource = campgrounds.value.source;
@@ -206,7 +205,7 @@ async function loadData() {
     console.error(campgrounds.reason);
   }
 
-  const results = [curated, trails, councilCamps, campgrounds];
+  const results = [campgrounds, ...entryFiles];
   const failed = results.filter(r => r.status === 'rejected').length;
   if (failed === results.length) {
     throw new Error('No directory data could be loaded.');
@@ -666,8 +665,12 @@ function sourceLine(rec) {
   if (rec.source === 'councilCamps') {
     return 'Found by web search of council camp pages in September 2026. Confirm details with the council before you go.';
   }
+  if (rec.source === 'txParks') {
+    return 'From each park\'s Texas Parks and Wildlife page, found by web search in September 2026. Confirm hours and fees with the park.';
+  }
   if (rec.source === 'trails') {
-    const updated = trailsSource && trailsSource.updated ? ` (updated ${trailsSource.updated})` : '';
+    const src = dataSources.trails;
+    const updated = src && src.updated ? ` (updated ${src.updated})` : '';
     return `From Scouting America's National Historic Trails list${updated}. Confirm details with the council.`;
   }
   return 'From this directory\'s curated list. Confirm details on the official website.';
