@@ -209,7 +209,7 @@ function renderProjects() {
           <div class="tool-header">
             <h2 class="tool-title">Camp &amp; Park Directory</h2>
           </div>
-          <p class="tool-desc">A searchable directory of Scouting America camps, national parks, state parks, Army Corps of Engineers parks, and other public lands. Add your own camps and contacts, keep notes, and export everything as a backup or CSV.</p>
+          <p class="tool-desc">A searchable directory of Scouting America camps and historic trails, national parks, state parks, Army Corps of Engineers parks, and other public lands. Add your own camps and contacts, keep notes, and export everything as a backup or CSV.</p>
           <div class="tool-tags">
             <span class="tool-tag">JavaScript</span>
             <span class="tool-tag">Scouting</span>

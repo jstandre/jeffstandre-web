@@ -6,7 +6,7 @@ Live at `https://jeffstandre.com/tools/CampDirectory/`.
 
 ## What it does
 
-- **Browse by category**: Scouting America, National Parks, State Parks, Army Corps, and Public Lands, plus *My entries* and *Starred*.
+- **Browse by category**: Scouting America (including every approved National Historic Trail), National Parks, State Parks, Army Corps, and Public Lands, plus *My entries* and *Starred*.
 - **Search and filter** by name, lake, forest, council, city, state, type, or your own notes. Filter campgrounds by amenities (reservable, electric, water, pets, campfires, free).
 - **Sort** by name, state, managing unit (for example, every campground on one Corps lake together), or distance from you.
 - **Keep your own info**: add entries (like local council camps or state parks), fix or fill in contact details on any listing, write notes, and star places.
@@ -20,6 +20,9 @@ Your additions, edits, notes, and stars are saved in the browser's `localStorage
 |---|---|---|
 | `data/federal-campgrounds.json` | Every campground in the federal recreation system (Army Corps, Forest Service, NPS, BLM, Reclamation, Fish & Wildlife) | [Campsite Atlas open data](https://github.com/kirkwood-justin/campsite-atlas-data), cleaned from the Recreation.gov RIDB export (CC0) |
 | `data/curated.json` | All 63 national parks, the official park agency for all 50 states, Scouting America's national high adventure bases and national office, and the federal land agencies | Curated list with links to each official website |
+| `data/scouting-historic-trails.json` | All 220 approved National Historic Trails and the 99 councils that run them, with council headquarters and websites | Scouting America's National Historic Trails list (PDF, updated August 2026), linked from [scouting.org/outdoor-programs/camping](https://www.scouting.org/outdoor-programs/camping/) |
+
+The historic trails list was converted from the PDF with a script, then checked by hand. Spelling in council, city, and trail names was corrected (for example, "Flordia" and "Patroits Path"). Approval and renewal notes, trail links, and one phone number were moved into their own fields. Trails outside their council's home state are filed under the trail's state (for example, the National Capital Area Council's Fredericksburg and Manassas trails are under Virginia). The PDF's totals say 221 trails, but it lists 220: Southwest Florida Council is marked as having two trails and names only one.
 
 What's **not** bundled yet: individual state parks and local council camps. No open, complete dataset for either was available when this was built. Each state park system entry links to that state's full park list, and the Scouting America tab points to the council locator. Add these places yourself or import a CSV.
 
