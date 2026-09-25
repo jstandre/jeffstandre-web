@@ -31,7 +31,7 @@ const TABS = [
 ];
 
 const CATEGORY_NOTES = {
-  scouting: 'Scouting America\'s national high adventure bases and national office are listed here. Local council camps are run by each council, so add the camps you use with <strong>+ Add entry</strong> or import your council\'s list as a CSV. Find any council at <a href="https://beascout.scouting.org/" target="_blank" rel="noopener">beascout.scouting.org</a>.',
+  scouting: 'Scouting America\'s national high adventure bases, every approved National Historic Trail, and the councils that run them. Set <strong>Type → Historic Trail</strong> to see just the trails, or sort by <strong>Managing unit</strong> to group them by council. Council camps aren\'t bundled yet, so add the camps you use with <strong>+ Add entry</strong> or import a CSV. Find any council at <a href="https://beascout.scouting.org/" target="_blank" rel="noopener">beascout.scouting.org</a>.',
   nps: 'All 63 national parks plus every campground in the national park system. Set <strong>Type → National Park</strong> to see only the parks.',
   state: 'Each entry is a state\'s official park system, with a link to its full list of parks. Add the individual parks you use, or import a list as a CSV.',
   usace: 'Army Corps of Engineers campgrounds from Recreation.gov. Sort by <strong>Managing unit</strong> to see each lake or project\'s campgrounds together.',
@@ -150,6 +150,7 @@ let baseRecords = [];
 let records = [];
 let byId = new Map();
 let campgroundSource = null;
+let trailsSource = null;
 
 const ui = {
   category: 'all',
@@ -170,8 +171,9 @@ async function fetchJson(url) {
 }
 
 async function loadData() {
-  const [curated, campgrounds] = await Promise.allSettled([
+  const [curated, trails, campgrounds] = await Promise.allSettled([
     fetchJson('data/curated.json'),
+    fetchJson('data/scouting-historic-trails.json'),
     fetchJson('data/federal-campgrounds.json')
   ]);
 
@@ -182,6 +184,13 @@ async function loadData() {
     console.error(curated.reason);
   }
 
+  if (trails.status === 'fulfilled') {
+    trailsSource = trails.value.source;
+    trails.value.entries.forEach(e => list.push({ ...e, source: 'trails' }));
+  } else {
+    console.error(trails.reason);
+  }
+
   if (campgrounds.status === 'fulfilled') {
     campgroundSource = campgrounds.value.source;
     const { fields, flags, rows } = campgrounds.value;
@@ -190,10 +199,11 @@ async function loadData() {
     console.error(campgrounds.reason);
   }
 
-  if (curated.status === 'rejected' && campgrounds.status === 'rejected') {
+  const failed = [curated, trails, campgrounds].filter(r => r.status === 'rejected').length;
+  if (failed === 3) {
     throw new Error('No directory data could be loaded.');
   }
-  if (curated.status === 'rejected' || campgrounds.status === 'rejected') {
+  if (failed) {
     showToast('Part of the directory didn\'t load. Refresh to try again.');
   }
 
@@ -526,6 +536,8 @@ function quickLinks(rec) {
   if (site) links.push(`<a class="quick-link" href="${escapeHtml(site)}" target="_blank" rel="noopener">Website ↗</a>`);
   const book = safeUrl(rec.bookUrl);
   if (book) links.push(`<a class="quick-link" href="${escapeHtml(book)}" target="_blank" rel="noopener">Reserve ↗</a>`);
+  const info = safeUrl(rec.infoUrl);
+  if (info) links.push(`<a class="quick-link" href="${escapeHtml(info)}" target="_blank" rel="noopener">Trail info ↗</a>`);
   return links.slice(0, 3).join('');
 }
 
@@ -637,6 +649,10 @@ function sourceLine(rec) {
     const when = src && (src.snapshot || src.built);
     return `From Campsite Atlas open data, which is cleaned from the Recreation.gov RIDB${when ? ` (snapshot ${when})` : ''}.`;
   }
+  if (rec.source === 'trails') {
+    const updated = trailsSource && trailsSource.updated ? ` (updated ${trailsSource.updated})` : '';
+    return `From Scouting America's National Historic Trails list${updated}. Confirm details with the council.`;
+  }
   return 'From this directory\'s curated list. Confirm details on the official website.';
 }
 
@@ -694,6 +710,7 @@ function openDetail(id, { updateHash = true } = {}) {
       ${detailRow('Contact page', linkHtml(rec.contactUrl, 'Official contact page'))}
       ${detailRow('Reservations', linkHtml(rec.bookUrl, 'Recreation.gov'))}
       ${detailRow('Look it up', linkHtml(rec.lookupUrl, 'Search Recreation.gov'))}
+      ${detailRow('Trail details', linkHtml(rec.infoUrl))}
       ${detailRow('Address', escapeHtml(place))}
       ${detailRow('Coordinates', coords)}
     </dl>
@@ -739,6 +756,7 @@ function detailText(rec) {
     safeUrl(rec.website) && `Website: ${safeUrl(rec.website)}`,
     safeUrl(rec.contactUrl) && `Contact page: ${safeUrl(rec.contactUrl)}`,
     safeUrl(rec.bookUrl) && `Reservations: ${safeUrl(rec.bookUrl)}`,
+    safeUrl(rec.infoUrl) && `Trail details: ${safeUrl(rec.infoUrl)}`,
     rec.lat != null && rec.lon != null && `Coordinates: ${rec.lat}, ${rec.lon}`,
     store.notes[rec.id] && `Notes: ${store.notes[rec.id]}`
   ];
@@ -1165,11 +1183,12 @@ function exportBackup() {
 
 function exportResultsCsv() {
   const header = ['id', 'category', 'type', 'name', 'organization', 'unit', 'address', 'city', 'state', 'zip',
-    'contact', 'phone', 'email', 'website', 'contact_page', 'reservations', 'lat', 'lon', 'description', 'notes', 'starred'];
+    'contact', 'phone', 'email', 'website', 'contact_page', 'reservations', 'more_info', 'lat', 'lon', 'description', 'notes', 'starred'];
   const rows = ui.results.map(r => [
     r.id, CATEGORIES[r.category]?.label || r.category, r.kind, r.name, r.org, r.unit, r.address, r.city,
     r.states.join(', '), r.zip, r.contact, r.phone, r.email, safeUrl(r.website), safeUrl(r.contactUrl),
-    safeUrl(r.bookUrl), r.lat, r.lon, r.summary, store.notes[r.id] || '', favorites.has(r.id) ? 'yes' : ''
+    safeUrl(r.bookUrl), safeUrl(r.infoUrl || r.lookupUrl), r.lat, r.lon, r.summary, store.notes[r.id] || '',
+    favorites.has(r.id) ? 'yes' : ''
   ]);
   const stamp = new Date().toISOString().slice(0, 10);
   downloadFile(`camp-directory-${ui.category}-${stamp}.csv`, toCsv([header, ...rows]), 'text/csv');
